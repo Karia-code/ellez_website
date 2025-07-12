@@ -1,0 +1,22 @@
+# Cloudflare Pages Redirects
+# Handle SPA routing and redirects
+
+# Redirect old WordPress URLs to static equivalents
+/wp-admin/* /404.html 404
+/wp-content/* /404.html 404
+/wp-includes/* /404.html 404
+
+# Redirect common WordPress endpoints
+/feed /404.html 404
+/rss /404.html 404
+/wp-login.php /404.html 404
+/wp-admin.php /404.html 404
+
+# Handle section anchors (optional - for better SEO)
+/about /#about 301
+/services /#services 301
+/projects /#projects 301
+/contact /#contact 301
+
+# Fallback for 404s
+/404.html /index.html 200
