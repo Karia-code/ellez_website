@@ -377,7 +377,7 @@ body {
   border-color: rgba(59, 130, 246, 0.3);
 }
 .project-card a {
-  background: #f3f6fa;
+  background: hsl(214, 74%, 72%);
   color: #1a237e;
   padding: 4px 12px;
   border-radius: 6px;
