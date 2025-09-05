@@ -376,6 +376,18 @@ body {
   transform: translateY(-10px);
   border-color: rgba(59, 130, 246, 0.3);
 }
+.project-card a {
+  background: #f3f6fa;
+  color: #1a237e;
+  padding: 4px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.project-card a:hover {
+  background: #e0e7ef;
+}
 
 .project-card h3 {
   font-size: 1.8rem;
