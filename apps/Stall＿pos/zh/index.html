@@ -1,89 +1,206 @@
 <!doctype html>
 <html lang="zh-TW">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stall POS – 創作者收銀系統</title>
-  <meta name="description" content="Stall POS 創作者收銀系統：專為市集、展會設計的離線收銀與庫存管理工具。" />
-  <link rel="stylesheet" href="../style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stall POS – 創作者收銀系統</title>
+    <meta name="description" content="Stall POS 創作者收銀系統：專為市集、展會設計的離線收銀與庫存管理工具。" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="vintage-texture"></div>
-  
-  <main class="container">
-    <article class="card">
-      <div class="lang-switch">
-        <a href="../index.html">English</a>
-      </div>
-      
-      <header>
-        <h1>Stall POS 創作者收銀系統</h1>
-        <p style="color:var(--text);margin:6px 0 24px;font-size:17px;opacity:0.9;">
-          專為創作者、手作人與市集攤販設計的離線收銀系統。
-          無需註冊、不用連網，所有資料都存在你的裝置上。
-        </p>
-      </header>
+<body class="dark-theme">
+    <div class="seigaiha seigaiha--medium"></div>
+    <a href="/" class="back-home">
+        <span class="icon">←</span>
+        <span>返回 Ellez</span>
+    </a>
+    <div class="theme-switch">
+        <button onclick="toggleTheme()" class="theme-toggle">
+            <div class="theme-icon dark">
+                <div class="moon"></div>
+                <div class="stars"></div>
+                <div class="clouds"></div>
+            </div>
+            <div class="theme-icon light">
+                <div class="sun"></div>
+                <div class="clouds"></div>
+            </div>
+        </button>
+    </div>
+    <main class="container">
+        <section class="hero ornament-box ornament--tr">
+            <img src="../images/icon.JPG" alt="Stall POS Icon" class="app-icon">
+            <h1>Stall POS 創作者收銀系統</h1>
+            <p class="hero-subtitle">
+                專為創作者、手作人與市集攤販設計的離線收銀系統。
+                <br>無需註冊、不用連網，所有資料都存在你的裝置上。
+            </p>
+            
+            <div class="countdown ornament-box ornament--bl">
+                <h3>搶先體驗即將開始</h3>
+                <div class="countdown-timer">
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="days">18</div>
+                        <div class="countdown-label">天</div>
+                    </div>
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="hours">12</div>
+                        <div class="countdown-label">時</div>
+                    </div>
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="minutes">34</div>
+                        <div class="countdown-label">分</div>
+                    </div>
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="seconds">56</div>
+                        <div class="countdown-label">秒</div>
+                    </div>
+                </div>
+                <button class="btn-primary">
+                    11月22日預約體驗版本
+                </button>
+            </div>
+        </section>
 
-      <section>
-        <h2>系統特色</h2>
-        <p>Stall POS 專為市集與展會設計，採用大按鈕、清晰標示，完全離線運作，讓創作者專注在銷售上。</p>
-        <div class="features-grid">
-          <div class="feature">
-            <p class="feature-text">快速結帳：點選商品、設定數量、列印或顯示訂單</p>
-          </div>
-          <div class="feature">
-            <p class="feature-text">支援現金收款與電子支付紀錄（無金流，純紀錄用）</p>
-          </div>
-          <div class="feature">
-            <p class="feature-text">庫存與商品管理，支援圖片、成本、售價，自動扣庫存</p>
-          </div>
-          <div class="feature">
-            <p class="feature-text">優惠/贈品邏輯，訂單統計（營收、利潤、優惠額度）</p>
-          </div>
-          <div class="feature">
-            <p class="feature-text">資料完全存在本機，隱私優先設計</p>
-          </div>
-        </div>
-      </section>
+        <section class="features card">
+            <h2>系統特色</h2>
+            <p class="section-intro">專為市集與展會設計，採用大按鈕、清晰標示，完全離線運作，讓創作者專注在銷售上。</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>快速結帳</h3>
+                    <p>點選商品、設定數量、列印或顯示訂單，一氣呵成</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>多元支付</h3>
+                    <p>支援現金收款與電子支付紀錄（無金流，純紀錄用）</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>庫存管理</h3>
+                    <p>支援圖片、成本、售價，自動扣庫存，完整商品管理</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>優惠方案</h3>
+                    <p>客製化優惠/贈品邏輯，營收、利潤即時統計</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>隱私優先</h3>
+                    <p>資料完全存在本機，無須擔心資料外洩風險</p>
+                </div>
+            </div>
+        </section>
 
-      <section class="screenshots">
-        <h2>系統畫面</h2>
-        <div class="screenshot-grid">
-          <div class="screenshot">
-            <img src="../images/dark_main_page.PNG" alt="主要收銀畫面" />
-            <div class="screenshot-caption">主要收銀畫面</div>
-          </div>
-          <div class="screenshot">
-            <img src="../images/dark_inventory.PNG" alt="庫存管理" />
-            <div class="screenshot-caption">庫存管理</div>
-          </div>
-          <div class="screenshot">
-            <img src="../images/dark_order.PNG" alt="訂單明細" />
-            <div class="screenshot-caption">訂單明細</div>
-          </div>
-          <div class="screenshot">
-            <img src="../images/dark_item_management.PNG" alt="商品管理" />
-            <div class="screenshot-caption">商品管理</div>
-          </div>
-        </div>
-      </section>
+        <section class="screenshots ornament-box ornament--tr">
+            <h2>系統畫面預覽</h2>
+            <div class="mode-switch">
+                <button class="mode-btn active" onclick="switchMode('light')">淺色模式</button>
+                <button class="mode-btn" onclick="switchMode('dark')">深色模式</button>
+            </div>
+            
+            <div class="screenshot-grid">
+                <!-- 主要收銀畫面 -->
+                <div class="screenshot light">
+                    <img src="../images/light_main_page.PNG" alt="主要收銀畫面 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="../images/dark_main_page.PNG" alt="主要收銀畫面 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 庫存管理 -->
+                <div class="screenshot light">
+                    <img src="../images/light_inventory.PNG" alt="庫存管理 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="../images/dark_inventory.PNG" alt="庫存管理 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 訂單明細 -->
+                <div class="screenshot light">
+                    <img src="../images/light_order.PNG" alt="訂單明細 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="../images/dark_order.PNG" alt="訂單明細 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 商品管理 -->
+                <div class="screenshot light">
+                    <img src="../images/light_item_management.PNG" alt="商品管理 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="../images/dark_item_management.PNG" alt="商品管理 - 深色模式" loading="lazy" />
+                </div>
 
-      <section>
-        <h2>為什麼選擇 Stall POS</h2>
-        <p>
-          為創作者打造的簡單可靠系統，市集現場完全不需要網路。
-          容易上手、專注在速度，讓你的檔期順利進行。
-        </p>
-      </section>
+                <!-- 付款功能 -->
+                <div class="screenshot">
+                    <img src="../images/payment.PNG" alt="付款功能" loading="lazy" />
+                </div>
 
-      <a class="cta" href="#">申請搶先體驗</a>
+                <!-- 設定介面 -->
+                <div class="screenshot">
+                    <img src="../images/setting.PNG" alt="設定介面" loading="lazy" />
+                </div>
+            </div>
+        </section>
 
-      <div class="ornament">
-        Stall POS 設計風格：和風年代感 × 和紙質地 × 活版印刷線條藝術
-        <br>
-        色彩點綴：深墨綠、金色、酒紅
-      </div>
-    </article>
-  </main>
+        <section class="cta-section ornament-box ornament--bl">
+            <h2>為什麼選擇 Stall POS</h2>
+            <p class="cta-text">
+                為創作者打造的簡單可靠系統，市集現場完全不需要網路。
+                容易上手、專注在速度，讓你的檔期順利進行。
+            </p>
+            <button class="btn-primary" onclick="window.location.href='terms.html'">
+                11月22日立即預約體驗版本
+            </button>
+            <div class="legal-links">
+                <a href="privacy.html"><span>隱私權政策</span></a>
+                <a href="terms.html"><span>使用者條款</span></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // 倒數計時功能
+        function updateCountdown() {
+            const targetDate = new Date('2025-11-22T00:00:00');
+            const now = new Date();
+            const difference = targetDate - now;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // 主題切換功能
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+
+        // 預覽模式切換
+        function switchMode(mode) {
+            const buttons = document.querySelectorAll('.mode-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (mode === 'dark') {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
+        }
+
+        // 初始化
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
