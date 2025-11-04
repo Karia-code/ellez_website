@@ -5,62 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stall POS – Creator Checkout | ELLEZ</title>
   <meta name="description" content="Stall POS – Creator Checkout: an offline-first checkout and inventory app for creators and market vendors." />
-  <link rel="stylesheet" href="/style.css" />
-  <style>
-    :root{
-      --base:#EEE2D3; --text:#1F3F36; --muted:#4A4A4A; --accent:#2B5448; --gold:#C79A53; --wine:#7E2E35; --pale:#EAF3D7;
-    }
-    body{background:var(--base); color:var(--text); font-family:Inter, system-ui, -apple-system;}
-    .container{max-width:1000px;margin:40px auto;padding:28px;}
-    .card{background:white;border-radius:14px;padding:20px;border:1px solid rgba(0,0,0,0.06);}
-    h1{font-size:30px;margin:0 0 8px;font-weight:700;font-family:"Serif"}
-    h2{font-size:22px;margin-top:20px}
-    ul{margin-left:20px}
-    .cta{display:inline-block;margin-top:16px;padding:12px 20px;background:linear-gradient(90deg,var(--accent),#3B6B5E);color:#fff;border-radius:12px;text-decoration:none;font-weight:600}
-    .feature{display:flex;gap:12px;align-items:flex-start}
-    .feature-bullet{width:8px;height:8px;background:var(--gold);border-radius:50%;margin-top:10px}
-    .ornament{border-top:1px solid var(--muted);margin-top:20px;padding-top:18px;color:var(--muted);font-size:14px}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="vintage-texture"></div>
+  
   <main class="container">
     <article class="card">
+      <div class="lang-switch">
+        <a href="zh/index.html">中文</a>
+      </div>
+      
       <header>
         <h1>Stall POS — Creator Checkout</h1>
-        <p style="color:var(--muted);margin:6px 0 18px;">Offline-first checkout & inventory for creators, makers, and market vendors. No signup, no cloud—everything stays on your device.</p>
+        <p style="color:var(--text);margin:6px 0 24px;font-size:17px;opacity:0.9;">
+          Offline-first checkout & inventory for creators, makers, and market vendors. 
+          No signup, no cloud—everything stays on your device.
+        </p>
       </header>
 
       <section>
         <h2>What it does</h2>
         <p>Stall POS is designed for quick, reliable sales at pop-up markets and craft stalls. Large buttons, clear labels, and offline operation help creators focus on selling.</p>
-        <ul>
-          <li class="feature"><span class="feature-bullet"></span><span>Fast checkout: tap items, set quantity, print or show order.
-</span></li>
-          <li class="feature"><span class="feature-bullet"></span><span>Supports cash &amp; record-only electronic payments (no payment gateway).</span></li>
-          <li class="feature"><span class="feature-bullet"></span><span>Inventory &amp; product management with images, cost, price, and auto-stock deduction.</span></li>
-          <li class="feature"><span class="feature-bullet"></span><span>Gift/promo logic and order summaries (revenue, profit, promo value).</span></li>
-          <li class="feature"><span class="feature-bullet"></span><span>All data stored locally — privacy-first by design.</span></li>
-        </ul>
+        <div class="features-grid">
+          <div class="feature">
+            <p class="feature-text">Fast checkout: tap items, set quantity, print or show order</p>
+          </div>
+          <div class="feature">
+            <p class="feature-text">Supports cash & record-only electronic payments (no payment gateway)</p>
+          </div>
+          <div class="feature">
+            <p class="feature-text">Inventory & product management with images, cost, price, and auto-stock deduction</p>
+          </div>
+          <div class="feature">
+            <p class="feature-text">Gift/promo logic and order summaries (revenue, profit, promo value)</p>
+          </div>
+          <div class="feature">
+            <p class="feature-text">All data stored locally — privacy-first by design</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screenshots">
+        <h2>System Screens</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot">
+            <img src="images/dark_main_page.PNG" alt="Main Checkout Screen" />
+            <div class="screenshot-caption">Main Checkout Screen</div>
+          </div>
+          <div class="screenshot">
+            <img src="images/dark_inventory.PNG" alt="Inventory Management" />
+            <div class="screenshot-caption">Inventory Management</div>
+          </div>
+          <div class="screenshot">
+            <img src="images/dark_order.PNG" alt="Order Details" />
+            <div class="screenshot-caption">Order Details</div>
+          </div>
+          <div class="screenshot">
+            <img src="images/dark_item_management.PNG" alt="Item Management" />
+            <div class="screenshot-caption">Item Management</div>
+          </div>
+        </div>
       </section>
 
       <section>
         <h2>Why Stall POS</h2>
-        <p>Built for makers who need a simple, dependable system at markets. No internet required, easy to learn, and focused on speed.</p>
-      </section>
-
-      <section>
-        <h2>Quick Specs</h2>
-        <ul>
-          <li>Offline-first, local storage</li>
-          <li>Tablet-optimized landscape mode</li>
-          <li>Large touch targets and accessible typography</li>
-          <li>Export / backup via local file (user-managed)</li>
-        </ul>
+        <p>
+          Built for makers who need a simple, dependable system at markets. 
+          No internet required, easy to learn, and focused on speed.
+        </p>
       </section>
 
       <a class="cta" href="#">Request Early Access</a>
 
-      <div class="ornament">Stall POS — Design: Japanese vintage × washi paper texture × letterpress line art. Color accents: deep green, gold, wine red.</div>
+      <div class="ornament">
+        Stall POS — Design: Japanese vintage × washi paper texture × letterpress line art
+        <br>
+        Color accents: deep ink green, gold, wine red
+      </div>
     </article>
   </main>
 </body>
