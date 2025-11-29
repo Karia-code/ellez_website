@@ -143,24 +143,8 @@ body {
     opacity: var(--ornament-opacity, .28);
     background-color: var(--ornament-color, #d6c49a);
     
-    -webkit-mask-image: url("data:image/svg+xml;utf8,\
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none'>\
-      <g stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\
-        <path d='M400 388 C 310 380 235 360 160 340 C 100 330 80 320 80 318 C 80 270 80 200 80 60'/>\
-        <path d='M400 376 C 310 368 235 348 160 328 C 100 318 92 308 92 306 C 92 258 92 188 92 72'/>\
-        <path d='M400 364 C 310 356 235 336 160 316 C 115 306 104 296 104 294 C 104 246 104 176 104 84'/>\
-        <path d='M400 352 C 310 344 235 324 160 304 C 130 294 116 284 116 282 C 116 234 116 164 116 96'/>\
-      </g>\
-    </svg>");
-    mask-image: url("data:image/svg+xml;utf8,\
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none'>\
-      <g stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>\
-        <path d='M400 388 C 310 380 235 360 160 340 C 100 330 80 320 80 318 C 80 270 80 200 80 60'/>\
-        <path d='M400 376 C 310 368 235 348 160 328 C 100 318 92 308 92 306 C 92 258 92 188 92 72'/>\
-        <path d='M400 364 C 310 356 235 336 160 316 C 115 306 104 296 104 294 C 104 246 104 176 104 84'/>\
-        <path d='M400 352 C 310 344 235 324 160 304 C 130 294 116 284 116 282 C 116 234 116 164 116 96'/>\
-      </g>\
-    </svg>");
+        -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none'><g stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M400 388 C 310 380 235 360 160 340 C 100 330 80 320 80 318 C 80 270 80 200 80 60'/><path d='M400 376 C 310 368 235 348 160 328 C 100 318 92 308 92 306 C 92 258 92 188 92 72'/><path d='M400 364 C 310 356 235 336 160 316 C 115 306 104 296 104 294 C 104 246 104 176 104 84'/><path d='M400 352 C 310 344 235 324 160 304 C 130 294 116 284 116 282 C 116 234 116 164 116 96'/></g></svg>");
+        mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' fill='none'><g stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M400 388 C 310 380 235 360 160 340 C 100 330 80 320 80 318 C 80 270 80 200 80 60'/><path d='M400 376 C 310 368 235 348 160 328 C 100 318 92 308 92 306 C 92 258 92 188 92 72'/><path d='M400 364 C 310 356 235 336 160 316 C 115 306 104 296 104 294 C 104 246 104 176 104 84'/><path d='M400 352 C 310 344 235 324 160 304 C 130 294 116 284 116 282 C 116 234 116 164 116 96'/></g></svg>");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: 100% 100%;
     -webkit-mask-size: contain;
