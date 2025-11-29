@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="zh-TW">
+<html lang="ja">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stall POS – 創作者收銀系統</title>
-    <meta name="description" content="Stall POS 創作者收銀系統：專為市集、展會設計的離線收銀與庫存管理工具。" />
+    <title>Stall POS – クリエイター向けレジシステム</title>
+    <meta name="description" content="Stall POS クリエイター向けレジシステム：マーケットや展示会のために設計されたオフラインレジ＆在庫管理ツール。" />
     <link rel="stylesheet" href="../style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="dark-theme">
     <div class="seigaiha seigaiha--medium"></div>
     <a href="/" class="back-home">
         <span class="icon">←</span>
-        <span>返回 Ellez</span>
+        <span>Ellezに戻る</span>
     </a>
     <div class="lang-switch">
         <select class="lang-select" onchange="location = this.value;">
-            <option value="../zh/index.html" selected>繁體中文</option>
+            <option value="../zh/index.html">繁體中文</option>
             <option value="../en/index.html">English</option>
-            <option value="../ja/index.html">日本語</option>
+            <option value="../ja/index.html" selected>日本語</option>
         </select>
     </div>
     <div class="theme-switch">
@@ -37,11 +37,11 @@
     <main class="container">
         <section class="hero ornament-box ornament--tr">
             <img src="../images/icon.JPG" alt="Stall POS Icon" class="app-icon">
-            <h1>Stall POS 創作者收銀系統</h1>
+            <h1>Stall POS クリエイター向けレジシステム</h1>
             <p class="hero-subtitle">
-                專為創作者、手作人與市集攤販設計的離線收銀系統。
-                <br>無需註冊、不用連網，所有資料都存在你的裝置上。
-                <br><strong>2025/12/12 正式上線</strong>
+                クリエイター、ハンドメイド作家、マーケット出店者のために設計されたオフラインレジシステム。
+                <br>登録不要、ネット接続不要、すべてのデータはあなたのデバイスに保存されます。
+                <br><strong>2025/12/12 正式リリース</strong>
                 <br><span style="font-size: 0.85em; display: block; margin-top: 8px; line-height: 1.4; opacity: 0.8;">
                 GMT: 12/11 16:00 | TW: 12/12 00:00<br>
                 JP: 12/12 01:00 | US(PST): 12/11 08:00
@@ -49,15 +49,15 @@
             </p>
             
             <div class="countdown ornament-box ornament--bl">
-                <h3>距離正式上線還有</h3>
+                <h3>正式リリースまであと</h3>
                 <div class="countdown-timer">
                     <div class="countdown-block">
                         <div class="countdown-number" id="days">00</div>
-                        <div class="countdown-label">天</div>
+                        <div class="countdown-label">日</div>
                     </div>
                     <div class="countdown-block">
                         <div class="countdown-number" id="hours">00</div>
-                        <div class="countdown-label">時</div>
+                        <div class="countdown-label">時間</div>
                     </div>
                     <div class="countdown-block">
                         <div class="countdown-number" id="minutes">00</div>
@@ -69,79 +69,76 @@
                     </div>
                 </div>
                 <button class="btn-primary">
-                    2025/12/12 App Store 見
+                    2025/12/12 App Storeで会いましょう
                 </button>
             </div>
         </section>
 
         <section class="features card">
-            <h2>系統特色</h2>
-            <p class="section-intro">專為市集與展會設計，採用大按鈕、清晰標示，完全離線運作，讓創作者專注在銷售上。</p>
+            <h2>システムの特徴</h2>
+            <p class="section-intro">マーケットや展示会向けに設計され、大きなボタンと明確な表示を採用。完全にオフラインで動作し、クリエイターが販売に集中できるようにします。</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">💳</div>
-                    <h3>快速結帳</h3>
-                    <p>點選商品、設定數量、列印或顯示訂單，一氣呵成</p>
+                    <h3>クイック会計</h3>
+                    <p>商品を選択、数量を設定、注文を印刷または表示、すべてがスムーズに</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>多元支付</h3>
-                    <p>支援現金收款與電子支付紀錄（無金流，純紀錄用）</p>
+                    <h3>多様な支払い</h3>
+                    <p>現金受け取りと電子決済の記録に対応（決済機能はなく、記録のみ）</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📦</div>
-                    <h3>庫存管理</h3>
-                    <p>支援圖片、成本、售價，自動扣庫存，完整商品管理</p>
+                    <h3>在庫管理</h3>
+                    <p>画像、原価、販売価格に対応、在庫自動引き落とし、完全な商品管理</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎁</div>
-                    <h3>優惠方案</h3>
-                    <p>客製化優惠/贈品邏輯，營收、利潤即時統計</p>
+                    <h3>割引プラン</h3>
+                    <p>カスタマイズ可能な割引/プレゼントロジック、売上と利益をリアルタイムで集計</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>隱私優先</h3>
-                    <p>資料完全存在本機，無須擔心資料外洩風險</p>
+                    <h3>プライバシー優先</h3>
+                    <p>データは完全に端末内に保存され、データ漏洩のリスクを心配する必要はありません</p>
                 </div>
             </div>
         </section>
 
         <section class="pricing card">
-            <h2>方案與價格</h2>
-            <p class="section-intro">2025/12/12 正式上線，提供買斷與訂閱兩種選擇。</p>
+            <h2>プランと価格</h2>
+            <p class="section-intro">2025/12/12 正式リリース。買い切りとサブスクリプションの2つの選択肢を提供します。</p>
             <div class="pricing-grid">
                 <!-- 金 - 買斷版 -->
                 <div class="pricing-card gold">
                     <div class="pricing-icon">
-                        <img src="../images/金icon.png" alt="金 - 買斷版">
+                        <img src="../images/金icon.png" alt="金 - 買い切り版">
                     </div>
-                    <h3>《金》買斷版</h3>
-                    <p class="pricing-type">平板專用・終身授權</p>
+                    <h3>《金》買い切り版</h3>
+                    <p class="pricing-type">タブレット専用・永久ライセンス</p>
                     
                     <div class="price-tier highlight">
-                        <span class="tag">早鳥價</span>
+                        <span class="tag">早割価格</span>
                         <span class="date">12/12 - 12/13</span>
                         <div class="price">
                             <span class="usd">$25.49 USD</span>
-                            <span class="twd">NT$ 790</span>
                         </div>
                     </div>
 
                     <div class="price-tier">
-                        <span class="tag">聖誕價</span>
+                        <span class="tag">クリスマス価格</span>
                         <span class="date">12/20 - 12/26</span>
                         <div class="price">
                             <span class="usd">$41.49 USD</span>
-                            <span class="twd">NT$ 1,290</span>
                         </div>
                     </div>
 
                     <div class="price-tier">
-                        <span class="tag">正常價</span>
-                        <span class="date">2025/12 上市</span>
+                        <span class="tag">通常価格</span>
+                        <span class="date">2025/12 リリース</span>
                         <div class="price">
                             <span class="usd">$79.99 USD</span>
-                            <span class="twd">NT$ 2,480</span>
                         </div>
                     </div>
                 </div>
@@ -149,97 +146,95 @@
                 <!-- 円 - 訂閱版 -->
                 <div class="pricing-card yen">
                     <div class="pricing-icon">
-                        <img src="../images/円icon.JPG" alt="円 - 訂閱版">
+                        <img src="../images/円icon.JPG" alt="円 - サブスクリプション版">
                     </div>
-                    <h3>《円》月訂閱</h3>
-                    <p class="pricing-type">平板專用・彈性訂閱</p>
+                    <h3>《円》月額サブスクリプション</h3>
+                    <p class="pricing-type">タブレット専用・柔軟なサブスクリプション</p>
 
                     <div class="price-tier highlight">
-                        <span class="tag">早鳥價</span>
+                        <span class="tag">早割価格</span>
                         <span class="date">12/12 - 12/26</span>
                         <div class="price">
                             <span class="usd">$7.49 USD</span>
-                            <span class="twd">NT$ 250</span>
                         </div>
                     </div>
 
                     <div class="price-tier">
-                        <span class="tag">正常價</span>
-                        <span class="date">每月自動續訂</span>
+                        <span class="tag">通常価格</span>
+                        <span class="date">毎月自動更新</span>
                         <div class="price">
                             <span class="usd">$9.99 USD</span>
-                            <span class="twd">NT$ 320</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="pricing-note">* 因 App Store 價格可能隨匯率浮動，實際金額以當下美金計價為主。</p>
+            <p class="pricing-note">* App Storeの価格は為替レートにより変動する可能性があるため、実際の金額はその時点の米ドル価格に準じます。</p>
         </section>
 
         <section class="screenshots ornament-box ornament--tr">
-            <h2>系統畫面預覽</h2>
+            <h2>システム画面プレビュー</h2>
             <div class="mode-switch">
-                <button class="mode-btn active" onclick="switchMode('light')">淺色模式</button>
-                <button class="mode-btn" onclick="switchMode('dark')">深色模式</button>
+                <button class="mode-btn active" onclick="switchMode('light')">ライトモード</button>
+                <button class="mode-btn" onclick="switchMode('dark')">ダークモード</button>
             </div>
             
             <div class="screenshot-grid">
                 <!-- 主要收銀畫面 -->
                 <div class="screenshot light">
-                    <img src="../images/light_main_page.PNG" alt="主要收銀畫面 - 淺色模式" loading="lazy" />
+                    <img src="../images/light_main_page.PNG" alt="メインレジ画面 - ライトモード" loading="lazy" />
                 </div>
                 <div class="screenshot dark">
-                    <img src="../images/dark_main_page.PNG" alt="主要收銀畫面 - 深色模式" loading="lazy" />
+                    <img src="../images/dark_main_page.PNG" alt="メインレジ画面 - ダークモード" loading="lazy" />
                 </div>
                 
                 <!-- 庫存管理 -->
                 <div class="screenshot light">
-                    <img src="../images/light_inventory.PNG" alt="庫存管理 - 淺色模式" loading="lazy" />
+                    <img src="../images/light_inventory.PNG" alt="在庫管理 - ライトモード" loading="lazy" />
                 </div>
                 <div class="screenshot dark">
-                    <img src="../images/dark_inventory.PNG" alt="庫存管理 - 深色模式" loading="lazy" />
+                    <img src="../images/dark_inventory.PNG" alt="在庫管理 - ダークモード" loading="lazy" />
                 </div>
                 
                 <!-- 訂單明細 -->
                 <div class="screenshot light">
-                    <img src="../images/light_order.PNG" alt="訂單明細 - 淺色模式" loading="lazy" />
+                    <img src="../images/light_order.PNG" alt="注文詳細 - ライトモード" loading="lazy" />
                 </div>
                 <div class="screenshot dark">
-                    <img src="../images/dark_order.PNG" alt="訂單明細 - 深色模式" loading="lazy" />
+                    <img src="../images/dark_order.PNG" alt="注文詳細 - ダークモード" loading="lazy" />
                 </div>
                 
                 <!-- 商品管理 -->
                 <div class="screenshot light">
-                    <img src="../images/light_item_management.PNG" alt="商品管理 - 淺色模式" loading="lazy" />
+                    <img src="../images/light_item_management.PNG" alt="商品管理 - ライトモード" loading="lazy" />
                 </div>
                 <div class="screenshot dark">
-                    <img src="../images/dark_item_management.PNG" alt="商品管理 - 深色模式" loading="lazy" />
+                    <img src="../images/dark_item_management.PNG" alt="商品管理 - ダークモード" loading="lazy" />
                 </div>
 
                 <!-- 付款功能 -->
                 <div class="screenshot">
-                    <img src="../images/payment.PNG" alt="付款功能" loading="lazy" />
+                    <img src="../images/payment.PNG" alt="支払い機能" loading="lazy" />
                 </div>
 
                 <!-- 設定介面 -->
                 <div class="screenshot">
-                    <img src="../images/setting.PNG" alt="設定介面" loading="lazy" />
+                    <img src="../images/setting.PNG" alt="設定画面" loading="lazy" />
                 </div>
             </div>
         </section>
 
         <section class="cta-section ornament-box ornament--bl">
-            <h2>為什麼選擇 Stall POS</h2>
+            <h2>なぜ Stall POS を選ぶのか</h2>
             <p class="cta-text">
-                為創作者打造的簡單可靠系統，市集現場完全不需要網路。
-                容易上手、專注在速度，讓你的檔期順利進行。
+                クリエイターのために作られたシンプルで信頼できるシステム。マーケットの現場ではインターネットが全く必要ありません。
+                使いやすく、スピードに集中でき、イベントをスムーズに進行させます。
             </p>
             <button class="btn-primary" onclick="window.location.href='terms.html'">
-                2025/12/12 App Store 見
+                2025/12/12 App Storeで会いましょう
             </button>
             <div class="legal-links">
-                <a href="privacy.html"><span>隱私權政策</span></a>
-                <a href="terms.html"><span>使用者條款</span></a>
+                <a href="privacy.html"><span>プライバシーポリシー</span></a>
+                <a href="terms.html"><span>利用規約</span></a>
             </div>
         </section>
     </main>
