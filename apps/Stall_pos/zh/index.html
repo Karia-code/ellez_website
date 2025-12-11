@@ -43,36 +43,15 @@
             <p class="hero-subtitle">
                 專為創作者、手作人與市集攤販設計的離線收銀系統。
                 <br>無需註冊、不用連網，所有資料都存在你的裝置上。
-                <br><strong>2025/12/12 正式上線</strong>
-                <br><span style="font-size: 0.85em; display: block; margin-top: 8px; line-height: 1.4; opacity: 0.8;">
-                GMT: 12/11 16:00 | TW: 12/12 00:00<br>
-                JP: 12/12 01:00 | US(PST): 12/11 08:00
-                </span>
             </p>
-            
-            <div class="countdown ornament-box ornament--bl">
-                <h3>距離正式上線還有</h3>
-                <div class="countdown-timer">
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="days">00</div>
-                        <div class="countdown-label">天</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="hours">00</div>
-                        <div class="countdown-label">時</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="minutes">00</div>
-                        <div class="countdown-label">分</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="seconds">00</div>
-                        <div class="countdown-label">秒</div>
-                    </div>
+
+            <div class="download-cta ornament-box ornament--bl">
+                <h3>取得 Stall POS</h3>
+                <p style="margin-top:8px; opacity:0.9;">現在可透過 App Store 下載或訂閱。請依需求選擇「買斷」或「訂閱」。</p>
+                <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買斷版（Gold）</a>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">月訂閱（Yen）</a>
                 </div>
-                <button class="btn-primary">
-                    2025/12/12 App Store 見
-                </button>
             </div>
         </section>
 
@@ -110,7 +89,7 @@
 
         <section class="pricing card">
             <h2>方案與價格</h2>
-            <p class="section-intro">2025/12/12 正式上線，提供買斷與訂閱兩種選擇。</p>
+            <p class="section-intro">已正式上線，提供買斷與訂閱兩種選擇。</p>
             <div class="pricing-grid">
                 <!-- 金 - 買斷版 -->
                 <div class="pricing-card gold">
@@ -238,9 +217,10 @@
                 為創作者打造的簡單可靠系統，市集現場完全不需要網路。
                 容易上手、專注在速度，讓你的檔期順利進行。
             </p>
-            <button class="btn-primary" onclick="window.location.href='terms.html'">
-                2025/12/12 App Store 見
-            </button>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買斷版（Gold）</a>
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">月訂閱（Yen）</a>
+            </div>
             <div class="legal-links">
                 <a href="privacy.html"><span>隱私權政策</span></a>
                 <a href="terms.html"><span>使用者條款</span></a>
@@ -250,23 +230,6 @@
     </main>
 
     <script>
-        // 倒數計時功能
-        function updateCountdown() {
-            const targetDate = new Date('2025-12-11T16:00:00Z');
-            const now = new Date();
-            const difference = targetDate - now;
-
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-
         // 主題切換功能
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
@@ -286,8 +249,6 @@
         }
 
         // 初始化
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
     </script>
 </body>
 </html>

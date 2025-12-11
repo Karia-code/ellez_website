@@ -23,56 +23,18 @@
             <option value="../ja/index.html">日本語</option>
         </select>
     </div>
-    <div class="theme-switch">
-        <button onclick="toggleTheme()" class="theme-toggle">
-            <div class="theme-icon dark">
-                <div class="moon"></div>
-                <div class="stars"></div>
-                <div class="clouds"></div>
-            </div>
-            <div class="theme-icon light">
-                <div class="sun"></div>
-                <div class="clouds"></div>
-            </div>
-        </button>
-    </div>
-    <main class="container">
-        <section class="hero ornament-box ornament--tr">
-            <img src="../images/icon.JPG" alt="Stall POS Icon" class="app-icon">
-            <h1>Stall POS</h1>
             <p class="hero-subtitle">
-                Offline cashier system designed for creators, crafters, and market vendors.
-                <br>No registration required, no internet needed. All data stays on your device.
-                <br><strong>Launching on 2025/12/12</strong>
-                <br><span style="font-size: 0.85em; display: block; margin-top: 8px; line-height: 1.4; opacity: 0.8;">
-                GMT: Dec 11 16:00 | TW: Dec 12 00:00<br>
-                JP: Dec 12 01:00 | US(PST): Dec 11 08:00
-                </span>
+                Simple and reliable system built for creators. No internet required at the market.
+                <br>Easy to use, focused on speed, making your event run smoothly.
             </p>
-            
-            <div class="countdown ornament-box ornament--bl">
-                <h3>Countdown to Launch</h3>
-                <div class="countdown-timer">
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="days">00</div>
-                        <div class="countdown-label">Days</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="hours">00</div>
-                        <div class="countdown-label">Hrs</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="minutes">00</div>
-                        <div class="countdown-label">Mins</div>
-                    </div>
-                    <div class="countdown-block">
-                        <div class="countdown-number" id="seconds">00</div>
-                        <div class="countdown-label">Secs</div>
-                    </div>
+
+            <div class="download-cta ornament-box ornament--bl">
+                <h3>Get Stall POS</h3>
+                <p style="margin-top:8px; opacity:0.9;">Available on the App Store — choose One-time purchase or Subscription.</p>
+                <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">App Store — One-time</a>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">App Store — Subscription</a>
                 </div>
-                <button class="btn-primary">
-                    See you on App Store 2025/12/12
-                </button>
             </div>
         </section>
 
@@ -110,7 +72,7 @@
 
         <section class="pricing card">
             <h2>Plans & Pricing</h2>
-            <p class="section-intro">Launching 2025/12/12. Available in One-Time Purchase and Subscription.</p>
+            <p class="section-intro">Now Available. Choose between One-Time Purchase and Subscription.</p>
             <div class="pricing-grid">
                 <!-- Gold - One-Time -->
                 <div class="pricing-card gold">
@@ -233,9 +195,10 @@
                 Simple and reliable system built for creators. No internet required at the market.
                 Easy to use, focused on speed, making your event run smoothly.
             </p>
-            <button class="btn-primary" onclick="window.location.href='terms.html'">
-                See you on App Store 2025/12/12
-            </button>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">App Store — One-time</a>
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">App Store — Subscription</a>
+            </div>
             <div class="legal-links">
                 <a href="privacy.html"><span>Privacy Policy</span></a>
                 <a href="terms.html"><span>Terms of Service</span></a>
@@ -245,23 +208,6 @@
     </main>
 
     <script>
-        // Countdown function
-        function updateCountdown() {
-            const targetDate = new Date('2025-12-11T16:00:00Z');
-            const now = new Date();
-            const difference = targetDate - now;
-
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-
         // 主題切換功能
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
@@ -281,8 +227,6 @@
         }
 
         // 初始化
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
     </script>
 </body>
 </html>
