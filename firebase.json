@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/admin", "destination": "/admin.html" },
+      { "source": "/updates/**", "destination": "/post.html" }
+    ],
+    "headers": [
+      {
+        "source": "**/*.{js,css}",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      }
+    ]
+  }
+}
