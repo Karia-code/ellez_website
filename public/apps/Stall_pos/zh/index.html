@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stall POS – 離線優先 iPad 收銀 App｜同人展、市集專用</title>
+    <meta name="description" content="Stall POS 是一款專為創作者、同人展與市集攤主設計的『離線優先』iPad 收銀 App。堅持不強制登入、不依賴雲端，讓結帳回歸最純粹的速度與隱私。" />
+    <meta name="keywords" content="iPad POS, 離線收銀, 同人展, 漫展, 文創市集, 快閃店, 創作者工具, 不需登入, 隱私優先, FF, CWT" />
+    <link rel="icon" href="/LOGO-.png" type="image/png">
+    <!-- 使用絕對路徑與版本號避免部署環境相對路徑解析與快取問題 -->
+    <link rel="stylesheet" href="/apps/Stall_pos/style.css?v=20251231-1600" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="seigaiha seigaiha--medium"></div>
+    
+    <!-- 新增：商業級 Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/apps/Stall_pos/zh/" class="nav-logo">
+                <img src="/apps/Stall_pos/images/icon.JPG" alt="Stall POS Logo">
+                <span>Stall POS</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">功能</a>
+                <a href="#use-cases">使用情境</a>
+                <a href="#pricing">定價</a>
+                <a href="/apps/Stall_pos/zh/faq.html">常見問答</a>
+            </div>
+            <div class="nav-actions">
+                <select class="lang-select-nav" onchange="location = this.value;">
+                    <option value="/apps/Stall_pos/zh/" selected>繁體中文</option>
+                    <option value="/apps/Stall_pos/en/">English</option>
+                    <option value="/apps/Stall_pos/ja/">日本語</option>
+                </select>
+                <button onclick="toggleTheme()" class="theme-toggle">
+                    <div class="theme-icon dark">
+                        <div class="moon"></div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="theme-icon light">
+                        <div class="sun"></div>
+                    </div>
+                </button>
+                <a href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" class="btn-primary btn-sm" target="_blank">下載 App</a>
+            </div>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <a href="/" class="back-home" style="top: 80px;">
+        <span class="icon">←</span>
+        <span>返回 Ellez</span>
+    </a>
+    
+    <main class="container">
+        <section class="hero ornament-box ornament--tr">
+            <img src="/apps/Stall_pos/images/icon.JPG" alt="Stall POS Icon" class="app-icon">
+            <h1>Stall POS 創作者收銀系統</h1>
+            <p class="hero-subtitle" style="font-size: 1.1rem; font-weight: 500; line-height: 1.6; margin: 1rem 0;">
+                「Stall POS 是一款專為創作者、同人展與市集攤主設計的『離線優先』iPad 收銀 App。堅持不強制登入、不依賴雲端，讓結帳回歸最純粹的速度與隱私。」
+            </p>
+            <p class="hero-subtitle">
+                專為創作者、手作人與市集攤販設計的離線收銀系統。
+                <br>無需註冊、不用連網，所有資料都存在你的裝置上。
+            </p>
+
+            <div class="download-cta ornament-box ornament--bl">
+                <h3>取得 Stall POS</h3>
+                <p style="margin-top:8px; opacity:0.9;">提供 7 天免費試用。需長期且完整使用需透過一次性買斷或訂閱解鎖。</p>
+                <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買斷版（Gold）</a>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">月訂閱（Yen）</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增：關於 Stall POS / 品牌宣言 -->
+        <section class="about card">
+            <h2>為什麼我們打造 Stall POS？</h2>
+            <div style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <p>市面上的 POS 系統大多是為了連鎖餐飲或大型零售設計的——它們功能複雜、依賴穩定的網路連線，並且強迫你註冊帳號以交換數據。</p>
+                
+                <p>但對於在 <strong>同人展 (Doujinshi Conventions)</strong>、<strong>文創市集</strong> 或 <strong>快閃店 (Pop-up Stores)</strong> 的創作者來說，這些都是負擔。</p>
+                
+                <h3 style="color: var(--accent-gold); margin-top: 2rem; margin-bottom: 1rem;">Stall POS 的核心哲學很簡單：</h3>
+                
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 1rem;">✅ <strong>絕對離線 (Offline-First)</strong>：會場網路再爛，結帳速度絕不卡頓。</li>
+                    <li style="margin-bottom: 1rem;">🔒 <strong>零個資門檻 (No Login)</strong>：下載即用，你的銷售數據只存在你的 iPad 裡，我們不看、也不賣。</li>
+                    <li style="margin-bottom: 1rem;">⚡ <strong>極簡高效率</strong>：沒有複雜的庫存盤點與會員系統，只有最直覺的點擊與結帳。</li>
+                </ul>
+                
+                <p style="margin-top: 2rem; font-style: italic; opacity: 0.9;">我們不服務餐廳，不服務大型連鎖店；我們只服務那些在第一線面對粉絲的創作者。</p>
+            </div>
+        </section>
+
+        <section id="features" class="features card">
+            <h2>為速度而生的離線 iPad 收銀機</h2>
+            <p class="section-intro">專為市集與展會設計，採用大按鈕、清晰標示，完全離線運作，讓創作者專注在銷售上。</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>離線優先架構</h3>
+                    <p>沒有網路也能完整運作，資料本地儲存，展場網路再差也不怕。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>無需帳戶登入</h3>
+                    <p>隱私至上，下載 App 即可開始販售，無隱藏訂閱陷阱。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>直覺的產品管理</h3>
+                    <p>專為少量多樣的周邊商品設計，支援快速點選與變體設定。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>CSV 數據導出</h3>
+                    <p>一鍵匯出 Excel 報表，方便展後記帳與分析。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>極速結帳流程</h3>
+                    <p>平均 3 秒完成一單，快速消化排隊人潮。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>彈性折扣設定</h3>
+                    <p>快速處理「滿額折」、「收攤特價」等市集常見情境。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增：使用情境 - 同人展/漫展 -->
+        <section id="use-cases" class="use-case card ornament-box ornament--tr">
+            <h2>同人展與漫展的最佳結帳工具</h2>
+            <p class="section-intro">專為 FF、CWT 等同人展覽設計，解決展場特有的痛點。</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>解決會場網路擁塞問題</h3>
+                    <p>FF、CWT 人潮過多導致網路掛點？Stall POS 完全不受影響。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>應對瞬間爆量人流</h3>
+                    <p>極簡化結帳流程，平均 3 秒完成一單，消化排隊人潮。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>創作者友善</h3>
+                    <p>支援刊物、周邊、套組設定，清楚記錄每一筆銷售。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增：使用情境 - 市集/快閃 -->
+        <section class="use-case card ornament-box ornament--bl">
+            <h2>文創市集與快閃店的 iPad POS 推薦</h2>
+            <p class="section-intro">輕量化、高彈性，完美適配各種市集情境。</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>輕量化設備</h3>
+                    <p>不用攜帶笨重的主機與線材，一台 iPad 搞定全場。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>彈性折扣設定</h3>
+                    <p>快速處理「滿額折」、「收攤特價」等市集常見情境。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>離線記帳</h3>
+                    <p>專注於銷售互動，銷售數據自動統計，無需手寫記帳。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing card">
+            <h2>方案與價格</h2>
+            <p class="section-intro">已正式上線，提供買斷與訂閱兩種選擇。</p>
+            <div class="pricing-grid">
+                <!-- 金 - 買斷版 -->
+                <div class="pricing-card gold">
+                    <div class="pricing-icon">
+                        <img src="/apps/Stall_pos/images/gold_icon.png" alt="金 - 買斷版" onerror="this.replaceWith('🟡');">
+                    </div>
+                    <h3>《金》買斷版</h3>
+                    <p class="pricing-type">平板專用・終身授權</p>
+                    
+                    <div class="price-tier highlight">
+                        <span class="tag">早鳥價</span>
+                        <span class="date">12/12 - 12/13</span>
+                        <div class="price">
+                            <span class="usd">$25.49 USD</span>
+                            <span class="twd">NT$ 790</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">聖誕價</span>
+                        <span class="date">12/20 - 12/26</span>
+                        <div class="price">
+                            <span class="usd">$41.49 USD</span>
+                            <span class="twd">NT$ 1,290</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">正常價</span>
+                        <span class="date">2025/12 上市</span>
+                        <div class="price">
+                            <span class="usd">$79.99 USD</span>
+                            <span class="twd">NT$ 2,480</span>
+                        </div>
+                    </div>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">前往 App Store（買斷版）</a>
+                </div>
+
+                <!-- 円 - 訂閱版 -->
+                <div class="pricing-card yen">
+                    <div class="pricing-icon">
+                        <img src="/apps/Stall_pos/images/yen_icon.JPG" alt="円 - 訂閱版" onerror="this.replaceWith('💱');">
+                    </div>
+                    <h3>《円》月訂閱</h3>
+                    <p class="pricing-type">平板專用・彈性訂閱</p>
+
+                    <div class="price-tier highlight">
+                        <span class="tag">早鳥價</span>
+                        <span class="date">12/12 - 12/26</span>
+                        <div class="price">
+                            <span class="usd">$7.49 USD</span>
+                            <span class="twd">NT$ 250</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">正常價</span>
+                        <span class="date">每月自動續訂</span>
+                        <div class="price">
+                            <span class="usd">$9.99 USD</span>
+                            <span class="twd">NT$ 320</span>
+                        </div>
+                    </div>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">前往 App Store（月訂閱）</a>
+                </div>
+            </div>
+            <p class="pricing-note">* 因 App Store 價格可能隨匯率浮動，實際金額以當下美金計價為主。</p>
+        </section>
+
+        <section class="screenshots ornament-box ornament--tr">
+            <h2>系統畫面預覽</h2>
+            <div class="mode-switch">
+                <button class="mode-btn active" onclick="switchMode('light')">淺色模式</button>
+                <button class="mode-btn" onclick="switchMode('dark')">深色模式</button>
+            </div>
+            
+            <div class="screenshot-grid">
+                <!-- 主要收銀畫面 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_main_page.PNG" alt="主要收銀畫面 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_main_page.PNG" alt="主要收銀畫面 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 庫存管理 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_inventory.PNG" alt="庫存管理 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_inventory.PNG" alt="庫存管理 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 訂單明細 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_order.PNG" alt="訂單明細 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_order.PNG" alt="訂單明細 - 深色模式" loading="lazy" />
+                </div>
+                
+                <!-- 商品管理 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_item_management.PNG" alt="商品管理 - 淺色模式" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_item_management.PNG" alt="商品管理 - 深色模式" loading="lazy" />
+                </div>
+
+                <!-- 付款功能 -->
+                <div class="screenshot">
+                    <img src="/apps/Stall_pos/images/payment.PNG" alt="付款功能" loading="lazy" />
+                </div>
+
+                <!-- 設定介面 -->
+                <div class="screenshot">
+                    <img src="/apps/Stall_pos/images/setting.PNG" alt="設定介面" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section ornament-box ornament--bl">
+            <h2>為什麼選擇 Stall POS</h2>
+            <p class="cta-text">
+                為創作者打造的簡單可靠系統，市集現場完全不需要網路。
+                容易上手、專注在速度，讓你的檔期順利進行。
+            </p>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買斷版（Gold）</a>
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">月訂閱（Yen）</a>
+            </div>
+            <div class="legal-links">
+                <a href="/apps/Stall_pos/zh/faq.html"><span>常見問題 FAQ</span></a>
+                <a href="/apps/Stall_pos/zh/privacy.html"><span>隱私權政策</span></a>
+                <a href="/apps/Stall_pos/zh/terms.html"><span>使用者條款</span></a>
+                <a href="/apps/Stall_pos/zh/support.html"><span>支援服務</span></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // 主題切換功能
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+        }
+        
+        // 載入時恢復主題設定
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.classList.remove('dark-theme');
+            }
+        });
+
+        // 移動端選單切換
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            
+            navLinks.classList.toggle('active');
+            
+            // 選項：可以加個動畫讓漢堡變成 X
+            // hamburger.classList.toggle('active'); 
+        }
+        
+        // 點擊導航連結後關閉移動端選單
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // 預覽模式切換
+        function switchMode(mode) {
+            const buttons = document.querySelectorAll('.mode-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (mode === 'dark') {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
+        }
+
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

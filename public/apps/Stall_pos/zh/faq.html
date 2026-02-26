@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>常見問題 FAQ - Stall POS</title>
+    <meta name="description" content="Stall POS 常見問題：離線收銀、隱私保護、適用場景等問題解答。" />
+    <link rel="icon" href="/LOGO-.png" type="image/png">
+    <link rel="stylesheet" href="/apps/Stall_pos/style.css?v=20251231" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .faq-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .faq-category {
+            margin-bottom: 3rem;
+        }
+        .faq-category h2 {
+            color: var(--accent-gold);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 197, 165, 0.2);
+            border-radius: 8px;
+        }
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .faq-question::before {
+            content: "Q";
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: var(--accent-gold);
+            color: var(--bg-dark);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            padding-left: 44px;
+        }
+        .faq-answer strong {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="seigaiha seigaiha--medium"></div>
+    <a href="/apps/Stall_pos/zh/" class="back-home">
+        <span class="icon">←</span>
+        <span>返回 Stall POS</span>
+    </a>
+    <div class="lang-switch">
+        <select class="lang-select" onchange="location = this.value;">
+            <option value="/apps/Stall_pos/zh/faq.html" selected>繁體中文</option>
+            <option value="/apps/Stall_pos/en/faq.html">English</option>
+            <option value="/apps/Stall_pos/ja/faq.html">日本語</option>
+        </select>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>常見問題 FAQ</h1>
+            <p class="hero-subtitle">關於 Stall POS 的功能、隱私、適用場景等常見問題解答</p>
+        </section>
+
+        <div class="faq-section">
+            <!-- 基礎與定位 -->
+            <div class="faq-category">
+                <h2>基礎與定位</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Stall POS 需要網路連線才能使用嗎？</div>
+                    <div class="faq-answer">
+                        <strong>不需要。</strong>Stall POS 是採「離線優先 (Offline-first)」架構設計，所有的結帳、商品管理與數據統計都可以在無網路的環境下流暢運作，非常適合網路不穩的展場或地下室市集。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">使用 Stall POS 需要註冊帳號或月費嗎？</div>
+                    <div class="faq-answer">
+                        <strong>不需要註冊帳號。</strong>我們相信工具應該隨開隨用，因此 Stall POS 沒有登入系統，也不會強迫您訂閱雲端服務。您可以直接下載並開始使用。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">我的銷售資料儲存在哪裡？Stall POS 會收集我的數據嗎？</div>
+                    <div class="faq-answer">
+                        您的所有銷售數據都<strong>「只」儲存在您的 iPad 裝置中</strong>。Stall POS 重視隱私，不會上傳、收集或分析您的營業額與商品資料。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 功能與適用性 -->
+            <div class="faq-category">
+                <h2>功能與適用性</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Stall POS 適合餐廳或咖啡廳使用嗎？</div>
+                    <div class="faq-answer">
+                        <strong>不建議。</strong>Stall POS 專為「零售、市集、展覽」設計，目前不支援餐廳所需的「桌位管理」、「廚房出單 (KDS)」或「口味客製化」功能。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Stall POS 支援電子發票或信用卡機串接嗎？</div>
+                    <div class="faq-answer">
+                        目前 Stall POS 專注於輕量化的收銀記帳。我們支援「記帳」，但暫不直接串接硬體刷卡機或發票機。您可以使用獨立的刷卡機收款後，在 App 內記錄支付方式。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">我可以將銷售報表匯出嗎？</div>
+                    <div class="faq-answer">
+                        <strong>可以。</strong>Stall POS 支援將銷售數據匯出為 CSV 格式（Excel 可開），方便您進行後續的財務整理或庫存分析。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 比較與差異 -->
+            <div class="faq-category">
+                <h2>比較與差異</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Stall POS 跟一般雲端 POS (如 iCHEF, Shopline) 有什麼不同？</div>
+                    <div class="faq-answer">
+                        最大的差別在於<strong>「輕量」與「隱私」</strong>。一般雲端 POS 功能強大但依賴網路與月費訂閱；Stall POS 則專注於「單機離線作業」與「無個資綁定」，更適合個人創作者與短期攤位。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Stall POS 支援 Android 系統嗎？</div>
+                    <div class="faq-answer">
+                        目前 Stall POS 僅提供 <strong>iOS / iPadOS</strong> 版本，以確保在 iPad 上提供最流暢、穩定的使用者體驗。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">如果在展場誤刪 App，資料還救得回來嗎？</div>
+                    <div class="faq-answer">
+                        由於資料儲存在本地，若您沒有進行 iCloud 備份或手動匯出 CSV，刪除 App 將會移除所有資料。<strong>建議在活動結束後定期匯出數據備份。</strong>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">這款 App 是免費的嗎？</div>
+                    <div class="faq-answer">
+                        Stall POS 提供 <strong>7 天免費試用</strong>。需長期且完整使用需要透過一次性買斷或訂閱解鎖。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="cta-section ornament-box ornament--bl" style="margin-top: 3rem;">
+            <h2>還有其他問題？</h2>
+            <p class="cta-text">
+                如果您有其他疑問，歡迎透過支援服務頁面聯繫我們。
+            </p>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                <a class="btn-primary" href="/apps/Stall_pos/zh/support.html">聯繫支援</a>
+                <a class="btn-primary" href="/apps/Stall_pos/zh/">返回首頁</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>

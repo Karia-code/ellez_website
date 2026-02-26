@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 禁止爬蟲進入後台 (因為那是給登入者用的，不需要被搜尋)
+Disallow: /admin/
+
+# 告訴爬蟲地圖在哪
+Sitemap: https://ellez.site/sitemap.xml

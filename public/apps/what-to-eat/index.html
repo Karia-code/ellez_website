@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-Hant" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>機會命運餐 v2.2｜What to Eat - ELLEZ LLC</title>
+  <meta name="description" content="選擇困難救星：定位搜尋＋隨機轉盤＋收藏與美食日記。免費版、去廣告、Pro 訂閱，多種方案任你選。專為 iOS 用戶打造的智能餐廳推薦 App。">
+  <meta name="keywords" content="美食,隨機選餐,選擇困難症,機會命運餐,餐廳 App,iOS,What to Eat,ELLEZ">
+
+  <!-- 連到同資料夾的 CSS；加上版本參數避免快取 -->
+  <link rel="stylesheet" href="/apps/what-to-eat/style.css?v=3.0" />
+  <link rel="icon" href="/LOGO-.png" type="image/png" />
+
+  <!-- OG -->
+  <meta property="og:title" content="機會命運餐 v2.2｜What to Eat - ELLEZ LLC">
+  <meta property="og:description" content="定位搜尋＋隨機轉盤＋收藏與美食日記。Free / No-Ads / Pro 三種方案。">
+  <meta property="og:image" content="images/og-cover.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ellez.com/apps/what-to-eat">
+
+  <!-- 結構化資料 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "機會命運餐 (What to Eat)",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS",
+    "author": {"@type":"Organization","name":"ELLEZ LLC"},
+    "offers": [
+      {"@type":"Offer","price":"0","priceCurrency":"USD","name":"Free"},
+      {"@type":"Offer","name":"No-Ads","price":"5.99","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Pro (Monthly)","price":"3.99","priceCurrency":"USD"},
+      {"@type":"Offer","name":"Pro (Yearly)","price":"24.99","priceCurrency":"USD"}
+    ],
+    "url":"https://ellez.com/apps/what-to-eat"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- 導覽列（白底深字；深色模式自動切換） -->
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="../../index.html" class="nav-logo" aria-label="返回 ELLEZ LLC 首頁">
+          <img src="/LOGO-.png" alt="ELLEZ LLC" style="width:32px;height:32px">
+          <span>ELLEZ</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#features">功能</a>
+          <a href="#pricing">定價</a>
+          <a href="#screens">介面</a>
+
+    <!-- 語言切換（class 名稱與 JS 對齊） -->
+          <div class="lang-toggle-nav" role="tablist" aria-label="Language">
+            <button class="active" data-lang="zh" role="tab" aria-selected="true">中</button>
+            <button data-lang="en" role="tab" aria-selected="false">EN</button>
+          </div>
+
+          <a class="btn btn-primary" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank" rel="noopener">
+            📱 App Store 下載
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="lang-content" data-lang="zh">
+          <h1>機會命運餐 v2.2</h1>
+          <p class="lead">專為「選擇困難症」打造的智能隨機餐廳 App<br>
+            結合 <strong>定位搜尋</strong>、<strong>隨機轉盤</strong>、<strong>個人收藏夾</strong> 與 <strong>美食日記</strong></p>
+        </div>
+        <div class="lang-content hidden" data-lang="en">
+          <h1>What to Eat v2.2</h1>
+          <p class="lead">Smart Random Restaurant Discovery App for “Choice Paralysis”<br>
+            Combining <strong>Location Search</strong>, <strong>Random Wheel</strong>, <strong>Favorites</strong> & <strong>Food Diary</strong></p>
+        </div>
+
+        <div class="ring" aria-hidden="true">
+          <a href="#features" class="spin">🎯 開始探索</a>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank" rel="noopener">📱 立即下載</a>
+          <a class="btn btn-ghost" href="./privacy.html">🔒 查看隱私政策</a>
+          <a class="btn btn-ghost" href="./terms.html">📋 使用條款</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 概述 -->
+    <section class="container">
+      <div class="lang-content" data-lang="zh">
+        <h2 class="text-center">為什麼選擇機會命運餐？</h2>
+        <p class="lead text-center">提供 Free / No-Ads / Pro 多種方案，重視合規與隱私（GDPR/CCPA）。</p>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="text-center">Why Choose What to Eat?</h2>
+        <p class="lead text-center">Multiple plans (Free / No-Ads / Pro), privacy-focused and GDPR/CCPA compliant.</p>
+      </div>
+    </section>
+
+    <!-- 功能 -->
+    <section id="features" class="container">
+      <div class="lang-content" data-lang="zh">
+        <h2>核心功能特色</h2>
+        <div class="features">
+          <article class="card feature-card">
+            <span class="feature-icon">📍</span>
+            <h3>智能定位搜尋</h3>
+            <p>Apple MapKit（可選 Google Places）找出 1–3 公里內餐廳/咖啡廳，支援多條件篩選。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">🎰</span>
+            <h3>隨機轉盤決策</h3>
+            <p>一鍵抽籤幫你做決定；支援候選上限與快取 TTL，Pro 享更高上限。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">⭐</span>
+            <h3>個人收藏夾</h3>
+            <p>喜愛店家分組、分享；Pro 提供進階管理與匯出/匯入。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">📖</span>
+            <h3>美食日記系統</h3>
+            <p>評分、價格、心得、照片與標籤；Pro 提供統計與匯出。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">💎</span>
+            <h3>彈性升級方案</h3>
+            <p>Free / No-Ads（買斷）/ Pro（月/年）；StoreKit 2 支援恢復購買。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">🔒</span>
+            <h3>隱私與合規</h3>
+            <p>整合 AdMob + UMP，尊重個人化/非個人化選擇，符合 GDPR/CCPA。</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="lang-content hidden" data-lang="en">
+        <h2>Core Features</h2>
+        <div class="features">
+          <article class="card feature-card">
+            <span class="feature-icon">📍</span>
+            <h3>Smart Location Search</h3>
+            <p>Apple MapKit (optional Google Places) within 1–3km with multi-filter support.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">🎰</span>
+            <h3>Random Wheel</h3>
+            <p>One-tap decision with candidate limits & cache TTL; higher limits on Pro.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">⭐</span>
+            <h3>Favorites</h3>
+            <p>Group & share favorite places; Pro adds advanced management/export.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">📖</span>
+            <h3>Food Diary</h3>
+            <p>Ratings, price, notes, photos & tags; Pro offers stats & export.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">💎</span>
+            <h3>Flexible Plans</h3>
+            <p>Free / No-Ads (one-time) / Pro (monthly/yearly), StoreKit 2 restore.</p>
+          </article>
+          <article class="card feature-card">
+            <span class="feature-icon">🔒</span>
+            <h3>Privacy & Compliance</h3>
+            <p>AdMob + UMP, GDPR/CCPA compliant, respects personalization choices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 對照表 -->
+    <section class="container">
+      <div class="lang-content" data-lang="zh">
+        <h2>功能分級對照</h2>
+        <table class="table">
+          <thead><tr><th>功能項目</th><th>Free</th><th>No-Ads</th><th>Pro</th></tr></thead>
+          <tbody>
+            <tr><td>候選上限</td><td>10</td><td>10</td><td>20</td></tr>
+            <tr><td>快取 TTL</td><td>30 分</td><td>30 分</td><td>60 分</td></tr>
+            <tr><td>搜尋篩選</td><td>基本</td><td>基本</td><td>進階</td></tr>
+            <tr><td>廣告</td><td>顯示</td><td>無</td><td>無</td></tr>
+            <tr><td>收藏</td><td>基本</td><td>基本</td><td>進階</td></tr>
+            <tr><td>美食日記</td><td>基本</td><td>基本</td><td>進階＋統計</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="lang-content hidden" data-lang="en">
+        <h2>Feature Comparison</h2>
+        <table class="table">
+          <thead><tr><th>Feature</th><th>Free</th><th>No-Ads</th><th>Pro</th></tr></thead>
+          <tbody>
+            <tr><td>Candidate Limit</td><td>10</td><td>10</td><td>20</td></tr>
+            <tr><td>Cache TTL</td><td>30 min</td><td>30 min</td><td>60 min</td></tr>
+            <tr><td>Filters</td><td>Basic</td><td>Basic</td><td>Advanced</td></tr>
+            <tr><td>Ads</td><td>Yes</td><td>No</td><td>No</td></tr>
+            <tr><td>Favorites</td><td>Basic</td><td>Basic</td><td>Advanced</td></tr>
+            <tr><td>Food Diary</td><td>Basic</td><td>Basic</td><td>Advanced + Analytics</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 定價 -->
+    <section id="pricing" class="container">
+      <div class="lang-content" data-lang="zh">
+        <h2 class="text-center">方案與定價</h2>
+        <div class="pricing">
+          <div class="plan">
+            <h3 class="plan-name">免費版</h3>
+            <div class="plan-price"><span class="currency">$</span>0</div>
+            <p class="plan-period">永久免費</p>
+            <ul class="plan-features">
+              <li>候選上限 10 間</li><li>快取 TTL 30 分</li><li>基本篩選</li><li>顯示廣告</li>
+              <li>基本收藏</li><li>基本美食日記</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank">免費下載</a>
+          </div>
+
+          <div class="plan">
+            <h3 class="plan-name">去廣告版</h3>
+            <div class="plan-price"><span class="currency">$</span>5<span style="font-size:20px">.99</span></div>
+            <p class="plan-period">一次性購買</p>
+            <ul class="plan-features">
+              <li>含 Free 全部功能</li><li>移除廣告</li><li>更流暢體驗</li><li>支持開發</li>
+            </ul>
+            <a class="btn btn-primary" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank">購買去廣告</a>
+          </div>
+
+          <div class="plan recommended">
+            <span class="badge pro">最推薦</span>
+            <h3 class="plan-name">Pro 專業版</h3>
+            <div class="plan-price"><span class="currency">$</span>24<span style="font-size:20px">.99</span></div>
+            <p class="plan-period">年訂閱（省 45%）</p>
+            <ul class="plan-features">
+              <li>候選上限 20 間</li><li>快取 TTL 60 分</li><li>進階搜尋與篩選</li>
+              <li>無廣告</li><li>進階收藏</li><li>日記統計</li><li>匯出/匯入</li><li>優先客服</li>
+            </ul>
+            <div class="mt-3">
+              <a class="btn btn-primary" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank">年訂 $24.99</a>
+              <a class="btn btn-ghost mt-1" href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank">月訂 $3.99</a>
+            </div>
+          </div>
+        </div>
+        <p class="lead text-center mt-4">* 價格可能因地區而異，實際以 App Store 顯示為準。</p>
+      </div>
+
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="text-center">Plans & Pricing</h2>
+        <div class="pricing">
+          <!-- 英文三卡，內容同上略 -->
+        </div>
+        <p class="lead text-center mt-4">* Prices may vary by region. Actual prices shown in App Store.</p>
+      </div>
+    </section>
+
+    <!-- 截圖 -->
+    <section id="screens" class="container">
+      <div class="lang-content" data-lang="zh">
+        <h2 class="text-center">App 介面預覽</h2>
+        <div class="screens">
+          <figure class="phone"><img src="images/home-page-zh.png" alt="主畫面：隨機轉盤"><figcaption class="caption">主畫面：隨機轉盤</figcaption></figure>
+          <figure class="phone"><img src="images/settings-screen-zh.png" alt="設定：搜尋範圍與篩選"><figcaption class="caption">設定：搜尋範圍與篩選</figcaption></figure>
+          <figure class="phone"><img src="images/favorites-screen-zh.png" alt="收藏：分組管理"><figcaption class="caption">收藏：分組管理</figcaption></figure>
+          <figure class="phone"><img src="images/diary-screen-zh.png" alt="美食日記：評分與記錄"><figcaption class="caption">美食日記：評分與記錄</figcaption></figure>
+        </div>
+      </div>
+      <div class="lang-content hidden" data-lang="en">
+        <h2 class="text-center">App Interface Preview</h2>
+        <div class="screens">
+          <figure class="phone"><img src="images/home-page.png" alt="Home: Random Wheel"><figcaption class="caption">Home: Random Wheel</figcaption></figure>
+          <figure class="phone"><img src="images/settings-screen.png" alt="Settings: Filters"><figcaption class="caption">Settings: Filters</figcaption></figure>
+          <figure class="phone"><img src="images/favorites-screen.png" alt="Favorites: Groups"><figcaption class="caption">Favorites: Groups</figcaption></figure>
+          <figure class="phone"><img src="images/diary-screen.png" alt="Food Diary: Ratings"><figcaption class="caption">Food Diary: Ratings</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 法規連結 -->
+    <section class="container">
+      <div class="banner" role="region" aria-label="Legal">
+        <div class="lang-content" data-lang="zh">
+          <strong>📋 相關文件：</strong>
+          <a href="./privacy.html">隱私政策</a> ·
+          <a href="./terms.html">使用條款</a> ·
+          <a href="mailto:ellez.tech.2023@gmail.com">聯絡我們</a>
+        </div>
+        <div class="lang-content hidden" data-lang="en">
+          <strong>📋 Documents:</strong>
+          <a href="./privacy.html">Privacy Policy</a> ·
+          <a href="./terms.html">Terms of Service</a> ·
+          <a href="mailto:ellez.tech.2023@gmail.com">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top -->
+  <div class="back-to-top"><a href="#top" aria-label="Back to top">↑</a></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="../../index.html">ELLEZ LLC</a>
+        <a href="./privacy.html">隱私政策</a>
+        <a href="./terms.html">使用條款</a>
+        <a href="mailto:ellez.tech.2023@gmail.com">聯絡我們</a>
+      </div>
+      <small>© <span id="year"></span> ELLEZ LLC. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- JS：語言切換 / 年份 / 動畫 -->
+  <script>
+    // 動態年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 語言切換（class 與 HTML 對齊）
+    const langBar = document.querySelector('.lang-toggle-nav');
+    const switchTo = (lang) => {
+      // 切換按鈕 active
+      langBar.querySelectorAll('button').forEach(b=>{
+        const isActive = b.dataset.lang === lang;
+        b.classList.toggle('active', isActive);
+        b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+      // 顯示對應語言內容
+      document.querySelectorAll('.lang-content').forEach(el=>{
+        el.classList.toggle('hidden', el.dataset.lang !== lang);
+      });
+      localStorage.setItem('preferred-lang', lang);
+      document.documentElement.lang = (lang === 'en' ? 'en' : 'zh-Hant');
+    };
+
+    if (langBar){
+      langBar.addEventListener('click', (e)=>{
+        const btn = e.target.closest('button[data-lang]');
+        if (!btn) return;
+        switchTo(btn.dataset.lang);
+      });
+      // 初始化：從存檔或預設 zh
+      switchTo(localStorage.getItem('preferred-lang') || 'zh');
+    }
+
+    // 進場小動畫
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if (entry.isIntersecting) entry.target.classList.add('fade-in');
+      });
+    }, {threshold:0.1, rootMargin:'0px 0px -50px 0px'});
+
+    document.querySelectorAll('.card, .plan, .phone').forEach(el=>io.observe(el));
+
+    // 平滑滾動
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if (id.length > 1){
+          const target = document.querySelector(id);
+          if (target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

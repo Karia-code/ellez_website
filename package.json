@@ -1,25 +1,17 @@
 {
-  "name": "ellez_website",
+  "name": "ellez-website-root",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@dataconnect/generated": "file:src/dataconnect-generated",
-    "firebase": "^12.6.0",
-    "lucide-react": "^0.561.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "react-router-dom": "^7.10.1"
+    "//說明": "--- 快速指令區 ---",
+    "dev:admin": "cd admin-app && npm run dev",
+    "build:admin": "cd admin-app && npm install && npm run build",
+    "//說明2": "--- 部署指令區 ---",
+    "predeploy": "npm run build:admin",
+    "deploy": "npm run predeploy && npx firebase deploy",
+    "//說明3": "--- 測試指令區 ---",
+    "serve": "npx firebase emulators:start"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.3",
-    "firebase-tools": "^15.0.0",
-    "vite": "^5.4.11",
-    "tailwindcss": "^3.4.14",
-    "postcss": "^8.4.47",
-    "autoprefixer": "^10.4.20"
+    "firebase-tools": "^15.0.0"
   }
 }

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stall POS – クリエイター向けレジシステム</title>
+    <meta name="description" content="Stall POS クリエイター向けレジシステム：マーケットや展示会のために設計されたオフラインレジ＆在庫管理ツール。" />
+    <link rel="icon" href="/LOGO-.png" type="image/png">
+    <!-- 絶対パス + バージョン付与でキャッシュとパスずれを防止 -->
+    <link rel="stylesheet" href="/apps/Stall_pos/style.css?v=20251130" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="seigaiha seigaiha--medium"></div>
+    <a href="/" class="back-home">
+        <span class="icon">←</span>
+        <span>Ellezに戻る</span>
+    </a>
+    <div class="lang-switch">
+        <select class="lang-select" onchange="location = this.value;">
+            <option value="/apps/Stall_pos/zh/">繁體中文</option>
+            <option value="/apps/Stall_pos/en/">English</option>
+            <option value="/apps/Stall_pos/ja/" selected>日本語</option>
+        </select>
+    </div>
+    <div class="theme-switch">
+        <button onclick="toggleTheme()" class="theme-toggle">
+            <div class="theme-icon dark">
+                <div class="moon"></div>
+                <div class="stars"></div>
+                <div class="clouds"></div>
+            </div>
+            <div class="theme-icon light">
+                <div class="sun"></div>
+                <div class="clouds"></div>
+            </div>
+        </button>
+    </div>
+    <main class="container">
+        <section class="hero ornament-box ornament--tr">
+            <img src="/apps/Stall_pos/images/icon.JPG" alt="Stall POS Icon" class="app-icon">
+            <h1>Stall POS — クリエイター向けレジシステム</h1>
+            <p class="hero-subtitle">
+                タブレット向けのオフラインレジシステム。インターネット不要で、市場でも安心して利用できます。
+                <br>使いやすさと速度にフォーカスし、あなたの出店をサポートします。
+            </p>
+
+            <div class="download-cta ornament-box ornament--bl">
+                <h3>Stall POS を入手</h3>
+                <p style="margin-top:8px; opacity:0.9;">App Store で入手できます — 買い切り（Gold）またはサブスク（Yen）をお選びください。</p>
+                <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買い切り（Gold）</a>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">サブスク（Yen）</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features card">
+            <h2>システムの特徴</h2>
+            <p class="section-intro">マーケットや展示会向けに設計され、大きなボタンと明確な表示を採用。完全にオフラインで動作し、クリエイターが販売に集中できるようにします。</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>クイック会計</h3>
+                    <p>商品を選択、数量を設定、注文を印刷または表示、すべてがスムーズに</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>多様な支払い</h3>
+                    <p>現金受け取りと電子決済の記録に対応（決済機能はなく、記録のみ）</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>在庫管理</h3>
+                    <p>画像、原価、販売価格に対応、在庫自動引き落とし、完全な商品管理</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>割引プラン</h3>
+                    <p>カスタマイズ可能な割引/プレゼントロジック、売上と利益をリアルタイムで集計</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>プライバシー優先</h3>
+                    <p>データは完全に端末内に保存され、データ漏洩のリスクを心配する必要はありません</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing card">
+            <h2>プランと価格</h2>
+            <p class="section-intro">正式リリース済み。買い切りとサブスクリプションの2つの選択肢を提供します。</p>
+            <div class="pricing-grid">
+                <!-- 金 - 買斷版 -->
+                <div class="pricing-card gold">
+                    <div class="pricing-icon">
+                        <img src="/apps/Stall_pos/images/gold_icon.png" alt="金 - 買い切り版" onerror="this.replaceWith('🟡');">
+                    </div>
+                    <h3>《金》買い切り版</h3>
+                    <p class="pricing-type">タブレット専用・永久ライセンス</p>
+                    
+                    <div class="price-tier highlight">
+                        <span class="tag">早割価格</span>
+                        <span class="date">12/12 - 12/13</span>
+                        <div class="price">
+                            <span class="usd">$25.49 USD</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">クリスマス価格</span>
+                        <span class="date">12/20 - 12/26</span>
+                        <div class="price">
+                            <span class="usd">$41.49 USD</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">通常価格</span>
+                        <span class="date">2025/12 リリース</span>
+                        <div class="price">
+                            <span class="usd">$79.99 USD</span>
+                        </div>
+                    </div>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">App Storeで入手（買い切り）</a>
+                </div>
+
+                <!-- 円 - 訂閱版 -->
+                <div class="pricing-card yen">
+                    <div class="pricing-icon">
+                        <img src="/apps/Stall_pos/images/yen_icon.JPG" alt="円 - サブスクリプション版" onerror="this.replaceWith('💱');">
+                    </div>
+                    <h3>《円》月額サブスクリプション</h3>
+                    <p class="pricing-type">タブレット専用・柔軟なサブスクリプション</p>
+
+                    <div class="price-tier highlight">
+                        <span class="tag">早割価格</span>
+                        <span class="date">12/12 - 12/26</span>
+                        <div class="price">
+                            <span class="usd">$7.49 USD</span>
+                        </div>
+                    </div>
+
+                    <div class="price-tier">
+                        <span class="tag">通常価格</span>
+                        <span class="date">毎月自動更新</span>
+                        <div class="price">
+                            <span class="usd">$9.99 USD</span>
+                        </div>
+                    </div>
+                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">App Storeでダウンロード（サブスク）</a>
+                </div>
+            </div>
+            <p class="pricing-note">* App Storeの価格は為替レートにより変動する可能性があるため、実際の金額はその時点の米ドル価格に準じます。</p>
+        </section>
+
+        <section class="screenshots ornament-box ornament--tr">
+            <h2>システム画面プレビュー</h2>
+            <div class="mode-switch">
+                <button class="mode-btn active" onclick="switchMode('light')">ライトモード</button>
+                <button class="mode-btn" onclick="switchMode('dark')">ダークモード</button>
+            </div>
+            
+            <div class="screenshot-grid">
+                <!-- 主要收銀畫面 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_main_page.PNG" alt="メインレジ画面 - ライトモード" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_main_page.PNG" alt="メインレジ画面 - ダークモード" loading="lazy" />
+                </div>
+                
+                <!-- 庫存管理 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_inventory.PNG" alt="在庫管理 - ライトモード" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_inventory.PNG" alt="在庫管理 - ダークモード" loading="lazy" />
+                </div>
+                
+                <!-- 訂單明細 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_order.PNG" alt="注文詳細 - ライトモード" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_order.PNG" alt="注文詳細 - ダークモード" loading="lazy" />
+                </div>
+                
+                <!-- 商品管理 -->
+                <div class="screenshot light">
+                    <img src="/apps/Stall_pos/images/light_item_management.PNG" alt="商品管理 - ライトモード" loading="lazy" />
+                </div>
+                <div class="screenshot dark">
+                    <img src="/apps/Stall_pos/images/dark_item_management.PNG" alt="商品管理 - ダークモード" loading="lazy" />
+                </div>
+
+                <!-- 付款功能 -->
+                <div class="screenshot">
+                    <img src="/apps/Stall_pos/images/payment.PNG" alt="支払い機能" loading="lazy" />
+                </div>
+
+                <!-- 設定介面 -->
+                <div class="screenshot">
+                    <img src="/apps/Stall_pos/images/setting.PNG" alt="設定画面" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section ornament-box ornament--bl">
+            <h2>なぜ Stall POS を選ぶのか</h2>
+            <p class="cta-text">
+                クリエイターのために作られたシンプルで信頼できるシステム。マーケットの現場ではインターネットが全く必要ありません。
+                使いやすく、スピードに集中でき、イベントをスムーズに進行させます。
+            </p>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">買い切り（Gold）</a>
+                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">サブスク（Yen）</a>
+            </div>
+            <div class="legal-links">
+                <a href="/apps/Stall_pos/ja/privacy.html"><span>プライバシーポリシー</span></a>
+                <a href="/apps/Stall_pos/ja/terms.html"><span>利用規約</span></a>
+                <a href="/apps/Stall_pos/ja/support.html"><span>サポート</span></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // 主題切換功能
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+
+        // 預覽模式切換
+        function switchMode(mode) {
+            const buttons = document.querySelectorAll('.mode-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (mode === 'dark') {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
+        }
+
+        // 初始化
+    </script>
+</body>
+</html>

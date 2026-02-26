@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,11 +8,15 @@
     ],
     "cleanUrls": true,
     "rewrites": [
-      { "source": "/", "destination": "/index.html" },
-      { "source": "/admin", "destination": "/admin.html" },
-      { "source": "/updates/**", "destination": "/post.html" }
+      { "source": "/admin/**", "destination": "/admin/index.html" }
     ],
     "headers": [
+      {
+        "source": "/app-ads.txt",
+        "headers": [
+          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+        ]
+      },
       {
         "source": "**/*.{js,css}",
         "headers": [

@@ -3,19 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELLEZ LLC - Where Technology Meets Emotion</title>
-  <link rel="icon" href="LOGO-.png?v=1" type="image/png">
-  <meta name="description" content="ELLEZ LLC is a product-focused software company specializing in design, AI, and human experience, creating trustworthy digital products.">
+  <title>ELLEZ LLC - Software Development Combining Technology & Emotion | Stall POS Creator's Cashier System</title>
+  <link rel="icon" href="/assets/images/LOGO-.png" type="image/png">
+  <meta name="description" content="ELLEZ LLC specializes in design, AI, and human-centric software. Our flagship product, Stall POS, is a beautifully designed cashier system for creators and market vendors.">
+  <meta name="keywords" content="POS system, creator tools, market cashier, iOS app development, software design, Stall POS, minimalist design">
+  
+  <!-- Multilingual SEO: hreflang tags -->
+  <link rel="alternate" hreflang="en" href="https://ellez.site/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ellez.site/index.zh.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ellez.site/" />
+  
   <!-- Google Fonts: Inter, Playfair Display, JetBrains Mono -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+<!-- ✨ 優雅流動背景 -->
+<div class="elegant-texture-bg">
+  <div class="flow-wave"></div>
+  <div class="noise-overlay"></div>
+</div>
 
 <nav class="navbar">
   <div class="nav-container">
     <a href="#" class="nav-logo">
-      <img src="LOGO-.png" alt="ELLEZ LLC" class="nav-logo-img">
+      <img src="/assets/images/LOGO-.png" alt="ELLEZ LLC" class="nav-logo-img">
       <span class="nav-logo-text">ELLEZ</span>
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -25,6 +38,7 @@
     <ul class="nav-links">
       <li><a href="#principles">Principles</a></li>
       <li><a href="#products">Products</a></li>
+      <li><a href="/careers.html">Careers</a></li>
       <li><a href="#updates">Updates</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -100,7 +114,7 @@
           <h3>Stall POS</h3>
           <p>An offline point-of-sale and inventory system designed for creators and market vendors. Fast, reliable, privacy-focused. </p>
           <div class="product-links">
-            <a href="apps/Stall_pos/en/index.html" class="btn-link">Learn More</a>
+            <a href="/apps/Stall_pos/en/" class="btn-link">Learn More</a>
             <a href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" class="btn-link">App Store</a>
           </div>
         </div>
@@ -112,7 +126,7 @@
           <h3>What to Eat</h3>
           <p>Smart random restaurant recommendation app combining location search and interactive wheel to solve the "what to eat" dilemma.</p>
           <div class="product-links">
-            <a href="apps/what-to-eat/index.html" class="btn-link">Learn More</a>
+            <a href="/apps/what-to-eat/" class="btn-link">Learn More</a>
             <a href="https://apps.apple.com/tw/app/%E6%A9%9F%E6%9C%83%E5%91%BD%E9%81%8B%E9%A4%90/id6752467498" target="_blank" class="btn-link">App Store</a>
           </div>
         </div>
@@ -131,17 +145,6 @@
           <span class="product-meta">Seeking Investment</span>
           <h3>Jeito</h3>
           <p>A next-generation social platform prioritizing privacy, authenticity, and creative freedom. No algorithmic pressure, no AI exploitation—just genuine connections.</p>
-        </div>
-      </article>
-      <!-- Taiwan Stock -->
-      <article class="product-card fade-in-section">
-        <div class="product-info">
-          <span class="product-meta">FinTech Platform</span>
-          <h3>taiwanstock. online</h3>
-          <p>An investment platform built for Taiwan's capital market.  Integrated dashboard, tools, and content with minimal dark UI and Excel/PDF export support.</p>
-          <div class="product-links">
-            <a href="https://taiwanstock.online" target="_blank" class="btn-link">Visit Site</a>
-          </div>
         </div>
       </article>
       <!-- TokoCommic -->
@@ -191,83 +194,37 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
-<!-- Firebase CDN for standalone operation, avoiding bare module import errors -->
-<script type="module">
-  // 1. Import Firebase from CDN (no bundler required)
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-  import { getFirestore, collection, getDocs, orderBy, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+<!-- ✅ 單一入口：所有功能都由 main.js 統一管理 -->
+<script type="module" src="/js/main.js"></script>
 
-  // 2. Firebase configuration (public keys are safe on frontend)
-  const firebaseConfig = {
-    apiKey: "AIzaSyCYi-6vZqsSsI6X1hhXHcABR--MlD3-mTY",
-    authDomain: "ellez-site.firebaseapp.com",
-    projectId: "ellez-site",
-    storageBucket: "ellez-site. firebasestorage.app",
-    messagingSenderId:  "161384067066",
-    appId: "1:161384067066:web:22fd7fa7e6d6dbfa023e43",
-    measurementId: "G-3LRGF5R73H"
-  };
-
-  // 3. Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // 4. Load updates logic
-  async function loadUpdates() {
-    const container = document.getElementById('dynamic-updates-list');
-    if (!container) return;
-
-    container.innerHTML = '<div class="loading-text">Loading updates...</div>';
-
-    try {
-      // Query "updates" collection with ordering
-      const q = query(
-        collection(db, "updates"),
-        orderBy("dateStr", "desc"),
-        limit(10)
-      );
-      
-      const querySnapshot = await getDocs(q);
-      
-      let items = [];
-      querySnapshot. forEach((doc) => {
-        items.push({ id: doc. id, ...doc.data() });
-      });
-
-      if (items.length === 0) {
-        container.innerHTML = '<div class="loading-text">Coming soon... </div>';
-      } else {
-        renderUpdates(items);
-      }
-    } catch (error) {
-      console.error("Error loading updates:", error);
-      container.innerHTML = '<div class="error-text">Failed to load updates.  Please try again later.</div>';
-    }
+<!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ELLEZ LLC",
+  "url": "https://ellez.site",
+  "logo": "https://ellez.site/assets/images/LOGO-.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/ellez-llc",
+    "https://apps.apple.com/developer/id123456789" 
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "ellez.tech.2023@gmail.com",
+    "contactType": "customer support"
   }
+}
+</script>
 
-  function renderUpdates(data) {
-    const container = document.getElementById('dynamic-updates-list');
-    container.innerHTML = '';
-
-    data.forEach(item => {
-      const article = document.createElement('article');
-      article.className = 'update-item fade-in-section visible';
-      
-      article.innerHTML = `
-        <time class="update-date">${item.dateStr || 'Date Pending'}</time>
-        <div class="update-content">
-          <h3>${item.title || 'Untitled'}</h3>
-          <p>${item.excerpt || item.content || 'Content coming soon'}</p>
-        </div>
-      `;
-      
-      container.appendChild(article);
-    });
-  }
-
-  // 5. Execute on page load
-  loadUpdates();
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Stall POS",
+  "operatingSystem": "iOS",
+  "applicationCategory": "BusinessApplication"
+}
 </script>
 
 </body>
