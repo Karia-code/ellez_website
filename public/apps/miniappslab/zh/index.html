@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniAppsLab — 把你的迷你 App 留在 iPhone | ELLEZ LLC</title>
+  <meta name="description" content="MiniAppsLab 是以本機為核心的 iPhone mini app 工作空間，可匯入、執行、保存版本並將 HTML、CSS、JavaScript 小工具放到主畫面。">
+  <link rel="canonical" href="https://ellez.site/apps/miniappslab/zh/">
+  <link rel="alternate" hreflang="en" href="https://ellez.site/apps/miniappslab/en/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://ellez.site/apps/miniappslab/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://ellez.site/apps/miniappslab/en/">
+  <link rel="icon" href="/assets/images/LOGO-.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/apps/miniappslab/style.css?v=20260827-3">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/index.zh.html" aria-label="ELLEZ 首頁">
+        <img src="/assets/images/LOGO-.png" alt="">
+        <span>ELLEZ</span>
+      </a>
+      <nav class="nav-actions" aria-label="產品導覽">
+        <a class="nav-link" href="#features">功能</a>
+        <a class="nav-link" href="#home-screen">加入主畫面</a>
+        <a class="nav-link" href="#pricing">價格</a>
+        <a class="lang-link" href="/apps/miniappslab/en/" lang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">iPhone 本機 mini app 工作空間</div>
+          <h1>MiniApps<br>Lab</h1>
+          <p class="hero-copy"><strong>一個小工具，不一定需要伺服器、帳號，也不一定值得另外做成一整個 App Store 專案。</strong> MiniAppsLab 讓你把 HTML、CSS、JavaScript 專案匯進 iPhone，本機執行、保存版本，最後還能從主畫面直接開啟。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">看看 MiniAppsLab</a>
+            <a class="btn btn-secondary" href="/index.zh.html">回 ELLEZ 首頁</a>
+          </div>
+        </div>
+
+        <div class="app-window" aria-label="MiniAppsLab 概念介面示意">
+          <div class="window-inner">
+            <div class="window-bar"><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><span>我的 APPS · 本機</span></div>
+            <div class="window-content">
+              <h2 class="mini-title">我的 Apps</h2>
+              <p class="mini-sub">儲存在這支 iPhone 的專案</p>
+              <div class="project-list">
+                <div class="project-row"><div class="project-icon">01</div><div><div class="project-name">專注計時器</div><div class="project-meta">HTML · CSS · JS</div></div><span class="version-pill">V3</span></div>
+                <div class="project-row"><div class="project-icon">02</div><div><div class="project-name">語錄小板</div><div class="project-meta">可離線使用</div></div><span class="version-pill">V2</span></div>
+                <div class="project-row"><div class="project-icon">03</div><div><div class="project-name">旅行清單</div><div class="project-meta">主畫面捷徑</div></div><span class="version-pill">V5</span></div>
+              </div>
+              <div class="code-card"><span class="accent">&lt;script&gt;</span><br>const idea = 'small';<br>const ownership = 'yours';<br><span class="accent">runLocally(idea, ownership);</span><br><span class="accent">&lt;/script&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">它能做什麼</span>
+          <h2>給那些「其實很好用，但不需要很大」的小 App 一個家。</h2>
+          <p>MiniAppsLab 是用來承載 web-based mini apps 的 Host App。第一版刻意把核心放在本機流程，而不是帳號、雲端後台或訂閱制。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-no">01</span><h3>匯入專案</h3><p>匯入以 <code>index.html</code> 為入口的資料夾，或直接貼上一個精簡的單頁 HTML mini app。</p></article>
+          <article class="feature-card"><span class="feature-no">02</span><h3>直接在 iPhone 執行</h3><p>專案會在 iOS WebView 中開啟；資源完整放在專案內時，核心使用情境可不依賴網路。</p></article>
+          <article class="feature-card"><span class="feature-no">03</span><h3>版本保存</h3><p>把修改保留成 V1、V2、V3，不必因為一次實驗，就把上一個正常運作的版本覆蓋掉。</p></article>
+          <article class="feature-card"><span class="feature-no">04</span><h3>先預覽，再替換</h3><p>新版本可以先測試，再決定是否套用；如果改壞了，也有比較清楚的回復路徑。</p></article>
+          <article class="feature-card"><span class="feature-no">05</span><h3>放到 iPhone 主畫面</h3><p>透過 Apple 捷徑建立主畫面入口，以後不必先進 MiniAppsLab 找專案再開啟。</p></article>
+          <article class="feature-card"><span class="feature-no">06</span><h3>Local-first</h3><p>核心流程不要求帳號或雲端工作區；專案檔案以留在裝置上為設計方向，但如果匯入的 mini app 自己寫了外部網路請求，仍可能連線取得資源。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">使用流程</span>
+          <h2>從一個資料夾，到真正能每天打開的小工具。</h2>
+        </div>
+        <div class="flow-grid">
+          <article class="step-card"><h3>匯入</h3><p>選擇專案資料夾或貼上小型 HTML App，先確認入口檔案完整再加入。</p></article>
+          <article class="step-card"><h3>執行</h3><p>直接在 iPhone 上測試，看看介面、互動和資料儲存是不是符合預期。</p></article>
+          <article class="step-card"><h3>迭代</h3><p>建立新版本、預覽修改，需要時回到上一版，不讓每次更新都變成不可逆。</p></article>
+          <article class="step-card"><h3>釘到桌面</h3><p>透過捷徑建立主畫面入口，讓這個 mini app 真的變成一點就能用。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="home-screen">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">加入 iPhone 主畫面</span>
+          <h2>最重要的一步：到捷徑後要「長按」。</h2>
+          <p>iOS 不允許 MiniAppsLab 自動替另一個專案在主畫面新增 App 圖示，因此這段流程會使用 Apple 捷徑。每個專案第一次設定好即可。</p>
+        </div>
+        <div class="shortcut-guide">
+          <aside class="guide-note">
+            <span class="section-kicker">第一次設定</span>
+            <div class="big">3 步驟</div>
+            <p>捷徑一旦放到主畫面，之後你在 MiniAppsLab 更新專案版本，不需要重新建立一次主畫面入口。</p>
+          </aside>
+          <div class="guide-steps">
+            <div class="guide-step"><div class="guide-step-num">01</div><div><h3>先儲存桌面圖示</h3><p>在 MiniAppsLab 打開想加入桌面的專案，點選<strong>「加入主畫面」</strong>，先把目前的 App Icon 儲存到照片，提供 iOS 的捷徑圖示使用。</p></div></div>
+            <div class="guide-step"><div class="guide-step-num">02</div><div><h3>進入 Apple「捷徑」</h3><p>接著點進捷徑。到 MiniAppsLab 的捷徑區域後，找到剛剛那個使用者建立的專案捷徑。</p></div></div>
+            <div class="guide-step"><div class="guide-step-num">03</div><div><h3>長按捷徑，再選「加入主畫面」</h3><p><strong>不要直接點一下。</strong>直接點只會執行專案；請<strong>長按該捷徑</strong>，等選單出現後選<strong>「加入主畫面」</strong>，再完成圖示設定。</p></div></div>
+          </div>
+        </div>
+        <div class="warning"><strong>為什麼不能少這一步？</strong> 主畫面上的入口是由 iOS「捷徑」系統管理，不是 MiniAppsLab 自己偷偷新增另一個 App icon；這樣也比較符合 Apple 允許的系統流程。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">技術範圍</span>
+          <h2>它是 Web mini apps 的 Host App，不是任意原生 App 安裝器。</h2>
+          <p>這個界線在產品能力與 App Store 審核上都很重要，所以網站也不會把它講成超過實際能力的東西。</p>
+        </div>
+        <div class="scope-grid">
+          <article class="scope-card"><h3>適合</h3><ul><li>HTML、CSS、JavaScript mini apps</li><li>計算器、追蹤器、清單、儀表板、個人小工具與 prototype</li><li>以 <code>index.html</code> 為入口的專案</li><li>資源已包在專案內、希望能離線使用的工具</li></ul></article>
+          <article class="scope-card"><h3>不會定位成</h3><ul><li>任意安裝 iOS 原生 binary 的工具</li><li>完整原生 App 的 App Store 發佈替代方案</li><li>讓匯入 JavaScript 任意呼叫 iOS 原生 API 的橋接器</li><li>第一版就提供多人協作與雲端 IDE 的服務</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="pricing">
+      <div class="container price-wrap">
+        <div class="price-card">
+          <span class="status">開發中</span>
+          <div class="price">$2.99 <small>USD</small></div>
+          <p class="price-note">目前規劃一次買斷。核心產品不做月訂閱、年訂閱。</p>
+        </div>
+        <div class="price-copy">
+          <h3>買一次，就一直用。</h3>
+          <p>MiniAppsLab 的定位就是一個小而實用的工具，不打算為了長期營收硬把基本功能拆成另一個訂閱。</p>
+          <p class="fine">實際 App Store 售價會依地區顯示，最終上架時間與價格仍以審核通過後的商店頁面為準。</p>
+          <div class="hero-actions"><a class="btn btn-secondary" href="mailto:ellez.tech.2023@gmail.com?subject=MiniAppsLab%20Feedback">提供產品意見</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="legal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">隱私 · 使用 · 支援</span>
+          <h2>上架前需要的資訊，也應該讓使用者找得到。</h2>
+          <p>MiniAppsLab 的隱私權、使用條款、隱私權選擇與支援資訊皆可公開存取。</p>
+        </div>
+        <div class="legal-grid">
+          <article class="legal-card"><h3>隱私權政策</h3><p>說明本機資料、系統權限、支援資料，以及使用者匯入程式碼可能產生的第三方連線。</p><a href="/apps/miniappslab/zh/privacy.html">查看隱私權政策 →</a></article>
+          <article class="legal-card"><h3>使用條款</h3><p>包含 Apple Standard EULA 說明、使用者內容、可接受使用、備份與第三方服務責任。</p><a href="/apps/miniappslab/zh/terms.html">查看使用條款 →</a></article>
+          <article class="legal-card"><h3>隱私權選擇</h3><p>如何刪除本機專案、管理 iOS 權限，以及查詢或刪除寄給 ELLEZ 的支援資料。</p><a href="/apps/miniappslab/zh/privacy-choices.html">管理隱私權選擇 →</a></article>
+          <article class="legal-card"><h3>產品支援</h3><p>匯入、版本、捷徑、相容性、退款、隱私與安全問題的官方聯絡入口。</p><a href="/apps/miniappslab/zh/support.html">前往支援頁 →</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025–2026 ELLEZ LLC · MiniAppsLab</span>
+      <span><a href="/index.zh.html">ELLEZ 首頁</a> · <a href="/apps/miniappslab/zh/privacy.html">隱私權</a> · <a href="/apps/miniappslab/zh/terms.html">使用條款</a> · <a href="/apps/miniappslab/zh/support.html">支援</a></span>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MiniAppsLab",
+    "operatingSystem": "iOS",
+    "applicationCategory": "DeveloperApplication",
+    "description": "以本機為核心的 iPhone mini app 工作空間，可匯入、執行、保存版本並將 HTML、CSS、JavaScript 小工具放到主畫面。",
+    "publisher": { "@type": "Organization", "name": "ELLEZ LLC", "url": "https://ellez.site" }
+  }
+  </script>
+</body>
+</html>

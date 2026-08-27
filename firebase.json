@@ -8,19 +8,41 @@
     ],
     "cleanUrls": true,
     "rewrites": [
-      { "source": "/admin/**", "destination": "/admin/index.html" }
+      {
+        "source": "/admin/**",
+        "destination": "/admin/index.html"
+      },
+      {
+        "source": "/updates/**",
+        "destination": "/post.html"
+      }
     ],
     "headers": [
       {
-        "source": "/app-ads.txt",
+        "source": "**/*.html",
         "headers": [
-          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, max-age=0, must-revalidate"
+          }
         ]
       },
       {
         "source": "**/*.{js,css}",
         "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/app-ads.txt",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain; charset=utf-8"
+          }
         ]
       }
     ]

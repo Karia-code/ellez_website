@@ -29,7 +29,7 @@ function renderNavbar(lang = 'en') {
     <nav class="navbar">
       <div class="nav-container">
         <a href="${homeLink}" class="nav-logo">
-          <img src="/assets/images/LOGO-.png" alt="ELLEZ LLC" class="nav-logo-img">
+          <img src="/LOGO-.png" alt="ELLEZ LLC" class="nav-logo-img">
           <span class="nav-logo-text">ELLEZ</span>
         </a>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -62,7 +62,7 @@ function renderFooter() {
           <div class="footer-brand">
             <h4>ELLEZ LLC</h4>
             <p class="footer-tagline">Creating future digital experiences centered on ethics, creativity, and humanity.</p>
-            <p>&copy; 2025–2026 ELLEZ LLC.</p>
+            <p>&copy; 2025 ELLEZ LLC.</p>
           </div>
           <div class="footer-links">
             <h4>Contact Us</h4>

@@ -52,14 +52,3 @@ Product pages:
 ## Security notes
 
 Firebase web configuration is intentionally public client configuration. Authorization must be enforced with Firebase Authentication and Firestore Security Rules. Never commit private service-account credentials or `.env` secrets.
-
-
-## 快速更新前台 Hosting
-
-如果只是修改首頁、CSS 或產品頁，不需要重新 build Admin：
-
-```bash
-npm run deploy:hosting
-```
-
-網站首頁的 HTML 設為每次重新驗證，CSS/JS 也不再使用一年 immutable cache，避免部署後瀏覽器仍顯示舊版。

@@ -9,8 +9,7 @@
     "predeploy": "npm run build:admin",
     "deploy": "npm run predeploy && npx firebase deploy",
     "//說明3": "--- 測試指令區 ---",
-    "serve": "npx firebase emulators:start",
-    "deploy:hosting": "npx firebase deploy --only hosting"
+    "serve": "npx firebase emulators:start"
   },
   "devDependencies": {
     "firebase-tools": "^15.0.0"
