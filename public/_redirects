@@ -1,0 +1,18 @@
+# Cloudflare Pages redirects (kept for compatibility)
+/about /#about 301
+/principles /#principles 301
+/products /#products 301
+/contact /#contact 301
+
+# Legacy aliases
+/services /#principles 301
+/projects /#products 301
+
+# Block common WordPress probe paths
+/wp-admin/* /404.html 404
+/wp-content/* /404.html 404
+/wp-includes/* /404.html 404
+/wp-login.php /404.html 404
+/wp-admin.php /404.html 404
+/feed /404.html 404
+/rss /404.html 404
