@@ -1,274 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stall POS – Offline-First iPad POS for Conventions & Pop-up Markets</title>
-    <meta name="description" content="Stall POS is an offline-first, privacy-focused iPad POS app designed specifically for creators, convention booths, and pop-up markets—no login required, no cloud dependencies." />
-    <meta name="keywords" content="iPad POS, offline POS, convention POS, pop-up store, doujinshi convention, creator tools, no login, privacy-first, artist alley" />
-    <link rel="icon" href="/assets/images/LOGO-.png" type="image/png">
-    <!-- Use absolute path + version query to avoid path resolution & stale cache -->
-    <link rel="stylesheet" href="/apps/Stall_pos/style.css?v=20251231-1600" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Stall POS – Offline-First iPad POS for Conventions &amp; Pop-up Markets</title>
+<meta content="Stall POS is an offline-first, privacy-focused iPad POS app designed specifically for creators, convention booths, and pop-up markets—no login required, no cloud dependencies." name="description"/>
+<meta content="iPad POS, offline POS, convention POS, pop-up store, doujinshi convention, creator tools, no login, privacy-first, artist alley" name="keywords"/>
+<link href="/assets/images/LOGO-.png" rel="icon" type="image/png"/>
+<!-- Use absolute path + version query to avoid path resolution & stale cache -->
+<link href="/apps/Stall_pos/style.css?v=20260831-2135" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 </head>
 <body class="dark-theme">
-    <div class="seigaiha seigaiha--medium"></div>
-    
-    <!-- Commercial-grade Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/apps/Stall_pos/en/" class="nav-logo">
-                <img src="/apps/Stall_pos/images/icon.JPG" alt="Stall POS Logo">
-                <span>Stall POS</span>
-            </a>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#use-cases">Use Cases</a>
-                <a href="#pricing">Pricing</a>
-                <a href="/apps/Stall_pos/en/faq.html">FAQ</a>
-            </div>
-            <div class="nav-actions">
-                <select class="lang-select-nav" onchange="location = this.value;">
-                    <option value="/apps/Stall_pos/zh/">繁體中文</option>
-                    <option value="/apps/Stall_pos/en/" selected>English</option>
-                    <option value="/apps/Stall_pos/ja/">日本語</option>
-                </select>
-                <button onclick="toggleTheme()" class="theme-toggle">
-                    <div class="theme-icon dark">
-                        <div class="moon"></div>
-                        <div class="stars"></div>
-                    </div>
-                    <div class="theme-icon light">
-                        <div class="sun"></div>
-                    </div>
-                </button>
-                <a href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" class="btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Download App</a>
-            </div>
-            <div class="hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-    
-    <a href="/" class="back-home" style="top: 80px;">
-        <span class="icon">←</span>
-        <span>Back to Ellez</span>
-    </a>
-    
-    <main class="container">
-        <section class="hero ornament-box ornament--tr">
-            <img src="/apps/Stall_pos/images/icon.JPG" alt="Stall POS Icon" class="app-icon">
-            <h1>Stall POS-Creator Checkout</h1>
-            <p class="hero-subtitle" style="font-size: 1.1rem; font-weight: 500; line-height: 1.6; margin: 1rem 0;">
-                "Stall POS is an offline-first, privacy-focused iPad POS app designed specifically for creators, convention booths, and pop-up markets—no login required, no cloud dependencies."
-            </p>
-            <p class="hero-subtitle">
-                Simple and reliable system built for creators. No internet required at the market.
-                <br>Easy to use, focused on speed, making your event run smoothly.
-            </p>
-
-            <div class="download-cta ornament-box ornament--bl">
-                <h3>Get Stall POS</h3>
-                <p style="margin-top:8px; opacity:0.9;">7-day free trial. Full access requires one-time purchase or subscription.</p>
-                <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
-                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">App Store — One-time</a>
-                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">App Store — Subscription</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- New: About / Why We Built This -->
-        <section class="about card">
-            <h2>Why We Built Stall POS</h2>
-            <div style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                <p>Most POS systems are designed for chain restaurants or large retail stores—they're feature-heavy, depend on stable internet, and force you to create an account in exchange for your data.</p>
-                
-                <p>But for creators at <strong>Doujinshi Conventions</strong>, <strong>Art Markets</strong>, or <strong>Pop-up Stores</strong>, these requirements are burdens.</p>
-                
-                <h3 style="color: var(--accent-gold); margin-top: 2rem; margin-bottom: 1rem;">Stall POS Core Philosophy:</h3>
-                
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 1rem;">✅ <strong>Absolute Offline-First</strong>: Bad venue WiFi won't slow down your checkout.</li>
-                    <li style="margin-bottom: 1rem;">🔒 <strong>Zero Personal Data Required (No Login)</strong>: Download and sell. Your sales data stays on your iPad—we don't see it, we don't sell it.</li>
-                    <li style="margin-bottom: 1rem;">⚡ <strong>Minimalist & Efficient</strong>: No complex inventory management or membership systems. Just intuitive taps and checkout.</li>
-                </ul>
-                
-                <p style="margin-top: 2rem; font-style: italic; opacity: 0.9;">We don't serve restaurants. We don't serve large chains. We only serve creators who face their fans on the frontlines.</p>
-            </div>
-        </section>
-
-        <section class="features card">
-            <h2>Features</h2>
-            <p class="section-intro">Designed for markets and exhibitions with large buttons and clear indicators. Works completely offline so you can focus on sales.</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💳</div>
-                    <h3>Quick Checkout</h3>
-                    <p>Select items, set quantity, print or show order in one go.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Multiple Payments</h3>
-                    <p>Support cash and electronic payment records (record only, no payment processing).</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Inventory Management</h3>
-                    <p>Support images, cost, price, auto-deduct inventory. Complete product management.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎁</div>
-                    <h3>Discounts</h3>
-                    <p>Customizable discount/gift logic. Real-time revenue and profit statistics.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Data stored completely on your device. No risk of data leaks.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="pricing card">
-            <h2>Plans & Pricing</h2>
-            <p class="section-intro">Now Available. Choose between One-Time Purchase and Subscription.</p>
-            <div class="pricing-grid">
-                <!-- Gold - One-Time -->
-                <div class="pricing-card gold">
-                    <div class="pricing-icon">
-                        <img src="/apps/Stall_pos/images/gold_icon.png" alt="Gold - One-Time" onerror="this.replaceWith('🟡');">
-                    </div>
-                    <h3>"Gold" One-Time</h3>
-                    <p class="pricing-type">iPad Only · Lifetime License</p>
-                    
-                    <div class="price-tier highlight">
-                        <span class="tag">Early Bird</span>
-                        <span class="date">12/12 - 12/13</span>
-                        <div class="price">
-                            <span class="usd">$25.49 USD</span>
-                        </div>
-                    </div>
-
-                    <div class="price-tier">
-                        <span class="tag">Xmas Special</span>
-                        <span class="date">12/20 - 12/26</span>
-                        <div class="price">
-                            <span class="usd">$41.49 USD</span>
-                        </div>
-                    </div>
-
-                    <div class="price-tier">
-                        <span class="tag">Regular</span>
-                        <span class="date">Available 2025/12</span>
-                        <div class="price">
-                            <span class="usd">$79.99 USD</span>
-                        </div>
-                    </div>
-                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">Get on the App Store (One-time)</a>
-                </div>
-
-                <!-- Yen - Subscription -->
-                <div class="pricing-card yen">
-                    <div class="pricing-icon">
-                        <img src="/apps/Stall_pos/images/yen_icon.JPG" alt="Yen - Subscription" onerror="this.replaceWith('💱');">
-                    </div>
-                    <h3>"Yen" Subscription</h3>
-                    <p class="pricing-type">iPad Only · Flexible Subscription</p>
-
-                    <div class="price-tier highlight">
-                        <span class="tag">Early Bird</span>
-                        <span class="date">12/12 - 12/26</span>
-                        <div class="price">
-                            <span class="usd">$7.49 USD</span>
-                        </div>
-                    </div>
-
-                    <div class="price-tier">
-                        <span class="tag">Regular</span>
-                        <span class="date">Monthly Auto-renew</span>
-                        <div class="price">
-                            <span class="usd">$9.99 USD</span>
-                        </div>
-                    </div>
-                    <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">Download on the App Store (Subscription)</a>
-                </div>
-            </div>
-            <p class="pricing-note">* App Store prices may vary by exchange rate. Actual price is based on USD.</p>
-        </section>
-
-        <section class="screenshots ornament-box ornament--tr">
-            <h2>Screenshots</h2>
-            <div class="mode-switch">
-                <button class="mode-btn active" onclick="switchMode('light')">Light Mode</button>
-                <button class="mode-btn" onclick="switchMode('dark')">Dark Mode</button>
-            </div>
-            
-            <div class="screenshot-grid">
-                <!-- Main POS Screen -->
-                <div class="screenshot light">
-                    <img src="/apps/Stall_pos/images/light_main_page.PNG" alt="Main POS Screen - Light" loading="lazy" />
-                </div>
-                <div class="screenshot dark">
-                    <img src="/apps/Stall_pos/images/dark_main_page.PNG" alt="Main POS Screen - Dark" loading="lazy" />
-                </div>
-                
-                <!-- Inventory -->
-                <div class="screenshot light">
-                    <img src="/apps/Stall_pos/images/light_inventory.PNG" alt="Inventory - Light" loading="lazy" />
-                </div>
-                <div class="screenshot dark">
-                    <img src="/apps/Stall_pos/images/dark_inventory.PNG" alt="Inventory - Dark" loading="lazy" />
-                </div>
-                
-                <!-- Order Details -->
-                <div class="screenshot light">
-                    <img src="/apps/Stall_pos/images/light_order.PNG" alt="Order Details - Light" loading="lazy" />
-                </div>
-                <div class="screenshot dark">
-                    <img src="/apps/Stall_pos/images/dark_order.PNG" alt="Order Details - Dark" loading="lazy" />
-                </div>
-                
-                <!-- Item Management -->
-                <div class="screenshot light">
-                    <img src="/apps/Stall_pos/images/light_item_management.PNG" alt="Item Management - Light" loading="lazy" />
-                </div>
-                <div class="screenshot dark">
-                    <img src="/apps/Stall_pos/images/dark_item_management.PNG" alt="Item Management - Dark" loading="lazy" />
-                </div>
-
-                <!-- Payment -->
-                <div class="screenshot">
-                    <img src="/apps/Stall_pos/images/payment.PNG" alt="Payment" loading="lazy" />
-                </div>
-
-                <!-- Settings -->
-                <div class="screenshot">
-                    <img src="/apps/Stall_pos/images/setting.PNG" alt="Settings" loading="lazy" />
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section ornament-box ornament--bl">
-            <h2>Why Choose Stall POS?</h2>
-            <p class="cta-text">
+<div class="seigaiha seigaiha--medium"></div>
+<!-- Commercial-grade Navbar -->
+<nav class="navbar">
+<div class="nav-container">
+<a class="nav-logo" href="/apps/Stall_pos/en/">
+<img alt="Stall POS Logo" src="/apps/Stall_pos/images/icon.JPG"/>
+<span>Stall POS</span>
+</a>
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#use-cases">Use Cases</a>
+<a href="#pricing">Pricing</a>
+<a href="/apps/Stall_pos/en/faq.html">FAQ</a>
+</div>
+<div class="nav-actions">
+<select class="lang-select-nav" onchange="location = this.value;">
+<option value="/apps/Stall_pos/zh/">繁體中文</option>
+<option selected="" value="/apps/Stall_pos/en/">English</option>
+<option value="/apps/Stall_pos/ja/">日本語</option>
+</select>
+<button class="theme-toggle" onclick="toggleTheme()">
+<div class="theme-icon dark">
+<div class="moon"></div>
+<div class="stars"></div>
+</div>
+<div class="theme-icon light">
+<div class="sun"></div>
+</div>
+</button>
+<a class="btn-primary btn-sm" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" rel="noopener noreferrer" target="_blank">Download App</a>
+</div>
+<div class="hamburger" onclick="toggleMobileMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+<a class="back-home" href="/" style="top: 80px;">
+<span class="icon">←</span>
+<span>Back to Ellez</span>
+</a>
+<main class="container">
+<section class="pos-hero" id="features">
+<div class="pos-window-bar">
+<div class="pos-window-brand"><span class="pos-window-dot"></span><strong>Stall POS</strong><span>Creator Checkout</span></div>
+<div class="pos-window-status"><span>☆ Offline-first</span><span>◇ No Login</span><span>□ Local Data</span></div>
+</div>
+<div class="pos-hero-grid">
+<div class="pos-hero-copy">
+<div class="pos-brand-row">
+<img alt="Stall POS Icon" class="pos-brand-icon" src="/apps/Stall_pos/images/icon.JPG"/>
+<div><span class="pos-kicker">Built for creator booths</span><strong>Stall POS Creator Checkout</strong></div>
+</div>
+<h1>Checkout should feel as easy as tapping a product.</h1>
+<p class="pos-lead">No forced login. No cloud dependency. From conventions and art markets to pop-up shops, open your iPad and start selling while keeping your attention on the customer in front of you.</p>
+<div class="pos-hero-actions">
+<a class="pos-action pos-action--primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" rel="noopener" target="_blank">Gold · One-time</a>
+<a class="pos-action" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" rel="noopener" target="_blank">Yen · Monthly</a>
+<a class="pos-action pos-action--ghost" href="#pricing">Lite · US$9.99</a>
+</div>
+<div class="pos-mini-features">
+<div><span>☆</span><strong>Fully offline</strong><small>Keep selling when venue Wi-Fi fails</small></div>
+<div><span>◇</span><strong>No account</strong><small>Download and start without handing over sales data</small></div>
+<div><span>□</span><strong>Local storage</strong><small>Products and transactions stay on your device</small></div>
+</div>
+</div>
+<div aria-label="Stall POS interface style preview" class="pos-terminal">
+<div class="terminal-title"><span>Checkout</span><small>Current order</small></div>
+<div class="terminal-cart">
+<div class="terminal-row"><span>New Book</span><span class="qty">× 1</span><strong>NT$ 250</strong></div>
+<div class="terminal-row"><span>Acrylic Charm</span><span class="qty">× 2</span><strong>NT$ 200</strong></div>
+</div>
+<div class="terminal-total"><span>Total</span><strong>NT$ 450</strong></div>
+<div class="terminal-pay"><span>Cash</span><span>Electronic</span></div>
+<div class="terminal-note">☆ Ready to sell　◇ No network　□ Local data</div>
+</div>
+</div>
+</section>
+<!-- New: About / Why We Built This -->
+<section class="pricing card pricing-comparison" id="pricing"><div class="pricing-console-head"><div class="pricing-console-copy"><span class="pricing-console-label">PLANS</span><h2>Choose your Stall POS</h2><p class="pricing-console-intro">The core experience stays the same: offline, no account, local data. Choose by feature depth and how you prefer to pay.</p></div><div class="pricing-console-status"><span>☆ Offline</span><span>◇ No Login</span><span>□ Local Data</span></div></div><div class="pricing-grid pricing-grid--equal"><article class="pricing-card plan-card lite"><div class="plan-head"><img alt="Stall POS Lite icon" class="plan-app-icon" loading="lazy" src="/apps/Stall_pos/images/lite_icon.png"/><div class="plan-title-wrap"><div class="plan-eyebrow">Minimal · One-time</div><h3>Stall POS Lite</h3></div></div><p class="plan-summary">For sellers who only need fast booth checkout. Create products, tap to sell, arrange items your way, and close the session when you choose.</p><div class="plan-fit"><span>Best for</span><strong>Minimal setup and the fastest start</strong></div><ul class="plan-feature-list"><li>Create products and drag to reorder</li><li>Cash / electronic payments with optional stock</li><li>Session totals and CSV export</li></ul><div class="plan-price"><span class="plan-price-label">One-time</span><strong>$9.99 <small>USD</small></strong><span class="plan-local-price">Release date TBA</span></div><span class="plan-action plan-action--disabled">Not yet released</span></article><article class="pricing-card plan-card gold"><div class="plan-head"><img alt="Stall POS Gold icon" class="plan-app-icon" loading="lazy" src="/apps/Stall_pos/images/gold_icon.png"/><div class="plan-title-wrap"><div class="plan-eyebrow">Full · One-time</div><h3>Stall POS Gold</h3></div></div><p class="plan-summary">The full Stall POS with a one-time license. Built for regular events and sellers who want complete product and operations tools.</p><div class="plan-fit"><span>Best for</span><strong>Long-term use with one-time payment</strong></div><ul class="plan-feature-list"><li>Full product, variant, and inventory tools</li><li>Transactions, CSV export, and discounts</li><li>Full feature set with lifetime license</li></ul><div class="plan-price"><span class="plan-price-label">One-time</span><strong>$79.99 <small>USD</small></strong><span class="plan-local-price">NT$ 2,480</span></div><a class="plan-action" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" rel="noopener" target="_blank">View on App Store</a></article><article class="pricing-card plan-card yen"><div class="plan-head"><img alt="Stall POS Yen icon" class="plan-app-icon" loading="lazy" src="/apps/Stall_pos/images/yen_icon.JPG"/><div class="plan-title-wrap"><div class="plan-eyebrow">Full · Monthly</div><h3>Stall POS Yen</h3></div></div><p class="plan-summary">The full Stall POS with flexible monthly billing. Use the complete feature set without paying the one-time license upfront.</p><div class="plan-fit"><span>Best for</span><strong>Short events, seasonal use, or flexible billing</strong></div><ul class="plan-feature-list"><li>Full product, variant, and inventory tools</li><li>Transactions, CSV export, and discounts</li><li>Full feature set with monthly renewal</li></ul><div class="plan-price"><span class="plan-price-label">Per month</span><strong>$9.99 <small>USD</small></strong><span class="plan-local-price">NT$ 320 / month</span></div><a class="plan-action" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" rel="noopener" target="_blank">View on App Store</a></article></div><p class="pricing-note">* App Store prices may vary by region, exchange rate, and Apple pricing tiers. The App Store price is the final price.</p></section>
+<section class="screenshots ornament-box ornament--tr">
+<h2>Screenshots</h2>
+<div class="mode-switch">
+<button class="mode-btn active" onclick="switchMode('light')">Light Mode</button>
+<button class="mode-btn" onclick="switchMode('dark')">Dark Mode</button>
+</div>
+<div class="screenshot-grid">
+<!-- Main POS Screen -->
+<div class="screenshot light">
+<img alt="Main POS Screen - Light" loading="lazy" src="/apps/Stall_pos/images/light_main_page.PNG"/>
+</div>
+<div class="screenshot dark">
+<img alt="Main POS Screen - Dark" loading="lazy" src="/apps/Stall_pos/images/dark_main_page.PNG"/>
+</div>
+<!-- Inventory -->
+<div class="screenshot light">
+<img alt="Inventory - Light" loading="lazy" src="/apps/Stall_pos/images/light_inventory.PNG"/>
+</div>
+<div class="screenshot dark">
+<img alt="Inventory - Dark" loading="lazy" src="/apps/Stall_pos/images/dark_inventory.PNG"/>
+</div>
+<!-- Order Details -->
+<div class="screenshot light">
+<img alt="Order Details - Light" loading="lazy" src="/apps/Stall_pos/images/light_order.PNG"/>
+</div>
+<div class="screenshot dark">
+<img alt="Order Details - Dark" loading="lazy" src="/apps/Stall_pos/images/dark_order.PNG"/>
+</div>
+<!-- Item Management -->
+<div class="screenshot light">
+<img alt="Item Management - Light" loading="lazy" src="/apps/Stall_pos/images/light_item_management.PNG"/>
+</div>
+<div class="screenshot dark">
+<img alt="Item Management - Dark" loading="lazy" src="/apps/Stall_pos/images/dark_item_management.PNG"/>
+</div>
+<!-- Payment -->
+<div class="screenshot">
+<img alt="Payment" loading="lazy" src="/apps/Stall_pos/images/payment.PNG"/>
+</div>
+<!-- Settings -->
+<div class="screenshot">
+<img alt="Settings" loading="lazy" src="/apps/Stall_pos/images/setting.PNG"/>
+</div>
+</div>
+</section>
+<section class="cta-section ornament-box ornament--bl">
+<h2>Why Choose Stall POS?</h2>
+<p class="cta-text">
                 Simple and reliable system built for creators. No internet required at the market.
                 Easy to use, focused on speed, making your event run smoothly.
             </p>
-            <div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
-                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" target="_blank" rel="noopener">App Store — One-time</a>
-                <a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" target="_blank" rel="noopener">App Store — Subscription</a>
-            </div>
-            <div class="legal-links">
-                <a href="/apps/Stall_pos/en/privacy.html"><span>Privacy Policy</span></a>
-                <a href="/apps/Stall_pos/en/terms.html"><span>Terms of Service</span></a>
-                <a href="/apps/Stall_pos/en/support.html"><span>Support</span></a>
-            </div>
-        </section>
-    </main>
-
-    <script>
+<div style="display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap;">
+<a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1-tablet%E7%94%A8%E5%A5%BD%E7%94%A8%E6%BB%BF/id6754980700" rel="noopener" target="_blank">App Store — One-time</a>
+<a class="btn-primary" href="https://apps.apple.com/us/app/stall-pos-%E5%89%B5%E4%BD%9C%E8%80%85%E6%94%B6%E9%8A%80%E7%B3%BB%E7%B5%B1/id6754892904" rel="noopener" target="_blank">App Store — Subscription</a>
+<a class="btn-primary" href="#pricing">Stall POS Lite · $9.99 USD</a></div>
+<div class="legal-links">
+<a href="/apps/Stall_pos/en/privacy.html"><span>Privacy Policy</span></a>
+<a href="/apps/Stall_pos/en/terms.html"><span>Terms of Service</span></a>
+<a href="/apps/Stall_pos/en/support.html"><span>Support</span></a>
+</div>
+</section>
+</main>
+<script>
         // Theme toggle
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
